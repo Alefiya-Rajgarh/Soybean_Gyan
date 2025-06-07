@@ -1,0 +1,1 @@
+ C:\\Users\\alefi\\StudioProjects\\Soybean_Gyan\\.dart_tool\\flutter_build\\51c42d573aeabb7191879de19f42aa27\\native_assets.json: 
