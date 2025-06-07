@@ -134,11 +134,16 @@ class BlueBeetle extends StatelessWidget {
     ),
     ),
     child:Center(
-        child:Column(
-            children: [
-              SizedBox(height: 250,),
-              Text("this will contain BlueBeetle details"),
-            ]
+        child:Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+              children: [
+                SizedBox(height: 250,),
+                Text("This will contain BlueBeetle details: \n"
+                    "This insect is dark metallic blue (almost blackish) in colour, with \n"
+                    "an orange head. With little disturbance, it falls on the ground and shows feign-death"),
+              ]
+          ),
         )
     )
       )
