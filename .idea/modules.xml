@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/soybean_gyan.iml" filepath="$PROJECT_DIR$/soybean_gyan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/soybean_gyan_android.iml" filepath="$PROJECT_DIR$/android/soybean_gyan_android.iml" />
+    </modules>
+  </component>
+</project>

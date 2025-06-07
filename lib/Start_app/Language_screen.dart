@@ -1,0 +1,146 @@
+import 'package:flutter/material.dart';
+import 'package:soybean_gyan/widget/Button.dart';
+
+class language extends StatefulWidget {
+  const language({super.key});
+  //0xFFE8F5E9
+
+  @override
+  State<language> createState() => _languageState();
+}
+
+class _languageState extends State<language>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(vsync: this);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  String selectedLanguage = 'English';
+
+  final List<Map<String, String>> languages = [
+    {'code': 'en', 'label': 'English', 'script': 'En'},
+    {'code': 'hi', 'label': 'हिंदी', 'script': 'ह'}, //hindi
+    {'code': 'ta', 'label': 'தமிழ்', 'script': 'த'}, //tamil
+    {'code': 'te', 'label': 'తెలుగు', 'script': 'త'}, //telugu
+    {'code': 'mr', 'label': 'मराठी', 'script': 'म'}, //marathi
+    {'code': 'kn', 'label': 'ಕನ್ನಡ', 'script': 'ಕ'}, //kannada
+    {'code': 'ml', 'label': 'മലയാളം', 'script': 'മ'}, //malayalam
+    {'code': 'bn', 'label': 'বাংলা', 'script': 'ব'}, //bengali
+    {'code': 'pa', 'label': 'ਪੰਜਾਬੀ', 'script': 'ਪ'}, //punjabi
+    {'code': 'gu', 'label': 'ગુજરાતી', 'script': 'ગ'}, //gujarati
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: Column(
+        children: [
+          SizedBox(height: screenHeight * 0.09),
+          Text(
+            'Select Language',
+            style: TextStyle(
+              fontSize: screenWidth * 0.071,
+              fontWeight: FontWeight.w700,
+              color: Color(0xFF156B34),
+              fontFamily: "Gilroy Heading",
+
+            ),
+          ),
+          SizedBox(height: screenHeight * 0.01),
+          Expanded(
+            child: GridView.count(
+              padding: const EdgeInsets.all(18),
+              crossAxisCount: 3,
+              crossAxisSpacing: 15,
+              mainAxisSpacing: 15,
+              childAspectRatio: 0.8,
+              shrinkWrap: true,
+              physics: BouncingScrollPhysics(),
+              children:
+                  languages.map((lang) {
+                    final isSelected = selectedLanguage == lang['label'];
+                    return GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedLanguage = lang['label']!;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black12,
+                              blurRadius: 4,
+                              offset: Offset(2, 2),
+                            ),
+                          ],
+                          border:
+                              isSelected
+                                  ? Border.all(
+                                    color: Color(0xFF53B175),
+                                    width: 2,
+                                  )
+                                  : Border.all(color: Colors.transparent),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              lang['script']!,
+                              style: TextStyle(
+                                fontSize: 28,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Gilroy Regular",
+                                color: Color(0xFF156B34),
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              lang['label']!,
+                              style: TextStyle(fontSize: 15, fontFamily: "Gilroy Regular", fontWeight: FontWeight.w500),
+                            ),
+                            if (isSelected)
+                              const Icon(
+                                Icons.check_circle,
+                                color: Color(0xFF53B175),
+                              ),
+                          ],
+                        ),
+                      ),
+                    );
+                  }).toList(),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: screenWidth * 0.01,
+              vertical: screenHeight * 0.04,
+            ),
+
+            child: MyButton(
+              onTab: () {
+                Navigator.pushReplacementNamed(context, '/home');
+              },
+              text: "Next",
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
