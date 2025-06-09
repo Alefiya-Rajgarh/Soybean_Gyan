@@ -115,114 +115,82 @@ class BlueBeetle extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        // appBar: AppBar(
-        //   title: Text(
-        //     "Blue Beetle",
-        //     style: const TextStyle(
-        //       color: Color(0xFF156B34),
-        //       fontWeight: FontWeight.w700,
-        //       fontFamily: "Gilroy Heading",
-        //       fontSize: 25,
-        //     ),
-        //   ),
-        //   backgroundColor: Color(0xFFE8F5E9),
-        // ),
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.white,
-                Colors.green.shade50,
-                Colors.green.shade100,
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
+        body: CustomScrollView(
+          slivers: [
+            SliverAppBar(
+              expandedHeight: 250.0,
+              pinned: true,
+              flexibleSpace: FlexibleSpaceBar(
+                background: Image.asset(
+                  'assets/images/Insect manage/blue beetle.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
-          ),
-          child: Column(
-            children: [
-              Stack(
+            SliverPersistentHeader(
+              delegate: _SliverTabBarDelegate(
+                const TabBar(
+                  labelColor: Colors.black,
+                  labelStyle: TextStyle(fontSize: 18),
+                  unselectedLabelColor: Colors.grey,
+                  unselectedLabelStyle: TextStyle(fontSize: 18),
+                  indicatorColor: Color(0xFF156B34),
+                  tabs: [
+                    Tab(text: "Identification",),
+                    Tab(text: "Damage"),
+                    Tab(text: "Management"),
+                  ],
+                ),
+                "Blue Beetle (Cneorane sp.)",
+              ),
+              pinned: true,
+            ),
+            SliverFillRemaining(
+              hasScrollBody: true,
+              child: TabBarView(
                 children: [
-                  Image.asset(
-                    'assets/images/Insect manage/blue beetle.jpg',
-                    width: double.infinity,
-                    height: 250,
-                    fit: BoxFit.cover,
-                  ),
-                  Positioned(
-                    top: 40,
-                    left: 10,
-                    child: IconButton(
-                      icon: const Icon(Icons.arrow_back, color: Colors.white),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                    ),
-                  ),
+                  _buildIdentification(),
+                  _buildDamage(),
+                  _buildManagement(),
                 ],
               ),
-              Container(
-                color: const Color(0xFF388E3C),
-                child: Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 8.0),
-                      child: Text(
-                        'Blue Beetle (Cneorane sp.)',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    const TabBar(
-                      labelColor: Colors.white,
-                      unselectedLabelColor: Colors.white60,
-                      indicatorColor: Colors.white,
-                      tabs: [
-                        Tab(text: "Identification"),
-                        Tab(text: "Damage"),
-                        Tab(text: "Management"),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Expanded(
-                child: TabBarView(
-                  children: [
-                    buildIdentificationTab(),
-                    buildDamageTab(),
-                    buildManagementTab(),
-                  ],
-                ),
-              ),
-            ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildIdentification() {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.white,
+            Colors.green.shade50,
+            Colors.green.shade100,
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        ),
+      ),
+      //margin: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(20),
+      child: Center(
+        child: Text(
+          "This insect is dark metallic blue (almost blackish) in colour, with an orange head. "
+              "With little disturbance, it falls on the ground and shows feign-death.",
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.w600,
+            color: Colors.black87,
           ),
         ),
       ),
     );
   }
 
-  Widget buildIdentificationTab() {
-    return Container(
-      color: const Color(0xFF81C784),
-      margin: const EdgeInsets.all(12),
-      padding: const EdgeInsets.all(16),
-      child: const Text(
-        "This insect is dark metallic blue (almost blackish) in colour, with an orange head. "
-        "With little disturbance, it falls on the ground and shows feign-death.",
-        style: TextStyle(
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-          color: Colors.black87,
-        ),
-      ),
-    );
-  }
-
-  Widget buildDamageTab() {
+  Widget _buildDamage() {
     return Center(
       child: Text(
         "Damage information goes here...",
@@ -231,7 +199,7 @@ class BlueBeetle extends StatelessWidget {
     );
   }
 
-  Widget buildManagementTab() {
+  Widget _buildManagement() {
     return Center(
       child: Text(
         "Management information goes here...",
@@ -240,6 +208,57 @@ class BlueBeetle extends StatelessWidget {
     );
   }
 }
+
+class _SliverTabBarDelegate extends SliverPersistentHeaderDelegate {
+  final TabBar _tabBar;
+  final String title;
+
+  _SliverTabBarDelegate(this._tabBar, this.title);
+
+  @override
+  double get minExtent => _tabBar.preferredSize.height + 30;
+
+  @override
+  double get maxExtent => _tabBar.preferredSize.height +100;
+
+  @override
+  Widget build(
+      BuildContext context,
+      double shrinkOffset,
+      bool overlapsContent,
+      ) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+    return Material(
+        child:
+        Container(
+          color: Color(0xFFE8F5E9),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(height: screenHeight*0.02,),
+              Text(
+                title,
+                style: const TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFF156B34),
+                ),
+              ),
+              const SizedBox(height: 8),
+              _tabBar,
+            ],
+          ),
+        )
+    );
+  }
+
+  @override
+  bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) =>
+      false;
+}
+
 
 class BiharCaterpillar extends StatelessWidget {
   const BiharCaterpillar({super.key});
