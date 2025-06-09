@@ -7,7 +7,6 @@ import 'Learn/Learn.dart';
 import 'Calendar/Calendar.dart';
 import 'Tools/Tools.dart';
 
-
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -30,24 +29,20 @@ class _HomeState extends State<Home> {
 
   void _handleSearch(String query) {
     setState(() {
-      filteredItems = allItems
-          .where((item) => item.toLowerCase().contains(query.toLowerCase()))
-          .toList();
+      filteredItems =
+          allItems
+              .where((item) => item.toLowerCase().contains(query.toLowerCase()))
+              .toList();
     });
   }
 
-  final List<String> titles = [
-    'Soybean Gyan',
-    'Learn',
-    'Calendar',
-    'Tools',
-  ];
+  final List<String> titles = ['Soybean Gyan', 'Learn', 'Calendar', 'Tools'];
 
   final List<Widget> pages = [
     HomePage(),
     const Learn(),
     const Calendar(),
-    const Tools()
+    const Tools(),
   ];
 
   void _onItemTapped(int index) {
@@ -59,9 +54,13 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-          key: _scaffoldKey,
-          appBar: CustomAppBar(scaffoldKey: _scaffoldKey, title: titles[_selectedIndex], onSearch: _handleSearch,),
-          drawer: const CustomDrawer(),
+      key: _scaffoldKey,
+      appBar: CustomAppBar(
+        scaffoldKey: _scaffoldKey,
+        title: titles[_selectedIndex],
+        onSearch: _handleSearch,
+      ),
+      drawer: const CustomDrawer(),
       body: pages[_selectedIndex],
       bottomNavigationBar: CustomBottomNavBar(
         currentIndex: _selectedIndex,

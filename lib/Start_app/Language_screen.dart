@@ -103,7 +103,7 @@ class _languageState extends State<language>
                             Text(
                               lang['script']!,
                               style: TextStyle(
-                                fontSize: 28,
+                                fontSize: 32,
                                 fontWeight: FontWeight.bold,
                                 fontFamily: "Gilroy Regular",
                                 color: Color(0xFF156B34),
@@ -112,7 +112,7 @@ class _languageState extends State<language>
                             const SizedBox(height: 8),
                             Text(
                               lang['label']!,
-                              style: TextStyle(fontSize: 15, fontFamily: "Gilroy Regular", fontWeight: FontWeight.w500),
+                              style: TextStyle(fontSize: 20, fontFamily: "Gilroy Regular", fontWeight: FontWeight.w500),
                             ),
                             if (isSelected)
                               const Icon(

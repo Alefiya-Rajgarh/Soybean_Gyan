@@ -268,17 +268,44 @@ class _HomePageState extends State<HomePage> {
                   );
                 },
               ),
-              Container(
-                height: screenHeight * 0.1,
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [Colors.green.shade100, Color(0xFFAED4BB)],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
+                  SizedBox(height: screenHeight*0.05),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:60),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                    child : Text(
+                      ' Making Soybean\n Farming Better',
+                      style: TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.grey.shade100,
+                        fontFamily: "Gilroy Regular",
+                        //height: 1.3
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
+    )
+    ),
+                  SizedBox(height: screenHeight*0.02),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal:70),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Crafted with love 💚',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: "Gilroy Regular",
+                        color:Color(0xFF156B34),
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
                   ),
-                ),
-              ),
-            ],
+    ),
+                  const SizedBox(height: 30),
+                ],
+
           ),
         ),
       ),
