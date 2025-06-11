@@ -44,7 +44,7 @@ final List<Insect> allInsects = [
   ),
   Insect(
     name: "Brown Stripped Semilooper",
-    title: "Brown Stripped Semilooper (Mocis undata Fabricious)",
+    title: "Brown Semilooper (Mocis undata Fabricious)",
     identification:
         "Adults are 3-4 cm large, brown coloured moths. Forewings have 3 dark brown bands, while the hind wings have smoky lines near the margins. Newly hatched larvae are greenish in colour, which become brownish on development. Grown-up larvae possess longitudinal pink and red stripes. Full-grown larvae are 4-5 cm long and make a typical semi-loop on movement.",
     damage:
@@ -76,7 +76,7 @@ final List<Insect> allInsects = [
   ),
   Insect(
     name: "White Grub",
-    title: "White Grub [Holotrichia consanguinea (Blanchard)]",
+    title: "White Grub [Holotrichia consanguinea]",
     identification:
         "Adults are dark brown or black, nocturnal, found around the light source during nights. Grubs are dirty white with a semicircular body, and brown head and mouth parts.",
     damage:

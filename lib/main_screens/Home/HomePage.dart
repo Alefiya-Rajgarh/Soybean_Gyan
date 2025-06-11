@@ -4,10 +4,10 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:soybean_gyan/main_screens/Home/CropManagement/crop_manage.dart';
 import 'package:soybean_gyan/main_screens/Home/DiseaseMangement/disease_manage.dart';
 import 'package:soybean_gyan/main_screens/Home/InsectManagement/insect_management.dart';
-import 'package:soybean_gyan/main_screens/Home/market_price.dart';
-import 'package:soybean_gyan/main_screens/Home/SoyFood/smart_soy.dart';
-import 'package:soybean_gyan/main_screens/Home/soy_food.dart';
-import 'package:soybean_gyan/main_screens/Home/weed_manage.dart';
+import 'package:soybean_gyan/main_screens/Home/MarketPrice/market_price.dart';
+import 'package:soybean_gyan/main_screens/Home/smart_soy.dart';
+import 'package:soybean_gyan/main_screens/Home/SoyFood/soy_food.dart';
+import 'package:soybean_gyan/main_screens/Home/WeedManagement/weed_manage.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -325,8 +325,8 @@ class _HomePageState extends State<HomePage> {
                               ' Making Soybean \n Farming Better',
                               style: TextStyle(
                                 fontSize: 35,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.grey.shade100,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white,
                                 fontFamily: "Gilroy Regular",
                                 //height: 1.3
                               ),
@@ -379,3 +379,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+

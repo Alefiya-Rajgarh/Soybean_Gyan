@@ -150,7 +150,7 @@ class DetailSection extends StatelessWidget {
         child: Text(
           content,
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 17,
             fontWeight: FontWeight.w600,
             color: Color(0xFF00796B),
           ),
