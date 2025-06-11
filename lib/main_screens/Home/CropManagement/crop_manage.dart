@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'crop_data.dart';
+import 'crop_details_screen.dart';
 
 class CropManage extends StatefulWidget {
   const CropManage({super.key});
@@ -10,257 +12,72 @@ class CropManage extends StatefulWidget {
 class _CropMangeState extends State<CropManage> {
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-          title: Text("Crop Management", style: const TextStyle(
+        title: Text(
+          "Crop Management",
+          style: const TextStyle(
             color: Color(0xFF156B34),
             fontWeight: FontWeight.w700,
             fontFamily: "Gilroy Heading",
             fontSize: 25,
           ),
-          ),
-          backgroundColor: Color(0xFFE8F5E9)
+        ),
+        backgroundColor: Color(0xFFE8F5E9),
       ),
-      body:  Container(
-      decoration: BoxDecoration(
-      gradient: LinearGradient(
-      colors: [
-      Colors.white,
-      Colors.green.shade50,
-      Colors.green.shade100,
-      ],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    ),
-    ),
-    child:
-      Center(
-        child:Column(
-            children: [
-              SizedBox(height: 250,),
-              Text("This will contain Crop management"),
-            ]
-        )
-    )
-      )
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child: ListView.builder(
+          padding: EdgeInsets.all(15),
+          itemCount: allCrops.length,
+          itemBuilder: (context, index) {
+            final crop = allCrops[index];
+            return InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CropDetailscreen(crop : crop),
+                  ),
+                );
+              },
+              child: Container(
+                margin: EdgeInsets.symmetric(vertical: 8),
+                height: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                    image: AssetImage(crop.image_path),
+                    fit: BoxFit.cover,
+                    colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.3),
+                      BlendMode.darken,
+                    ),
+                  ),
+                ),
+                alignment: Alignment.center,
+                child: Text(
+                  crop.name,
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w800,
+                    fontFamily: "Gilroy Heading",
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
     );
   }
 }
-
-class SoilRequirement extends StatelessWidget {
-  const SoilRequirement({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: Text("Soil Requirements", style: const TextStyle(
-            color: Color(0xFF156B34),
-            fontWeight: FontWeight.w700,
-            fontFamily: "Gilroy Heading",
-            fontSize: 25,
-          ),
-          ),
-          backgroundColor: Color(0xFFE8F5E9)
-      ),
-      body:  Container(
-      decoration: BoxDecoration(
-      gradient: LinearGradient(
-      colors: [
-      Colors.white,
-      Colors.green.shade50,
-      Colors.green.shade100,
-      ],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    ),
-    ),
-    child:
-      Center(
-        child:Column(
-            children: [
-              SizedBox(height: 250,),
-              Text("This will contain soil management"),
-            ]
-        )
-    )
-      )
-    );
-  }
-}
-
-class Tillage extends StatelessWidget {
-  const Tillage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-class Varieties extends StatelessWidget {
-  const Varieties({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-class Seed extends StatelessWidget {
-  const Seed({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-class Sowing extends StatelessWidget {
-  const Sowing({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-class Fertilizers extends StatelessWidget {
-  const Fertilizers({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: Text("Manure & Fertilizers", style: const TextStyle(
-            color: Color(0xFF156B34),
-            fontWeight: FontWeight.w700,
-            fontFamily: "Gilroy Heading",
-            fontSize: 25,
-          ),
-          ),
-          backgroundColor: Color(0xFFE8F5E9)
-      ),
-      body:  Container(
-      decoration: BoxDecoration(
-      gradient: LinearGradient(
-      colors: [
-      Colors.white,
-      Colors.green.shade50,
-      Colors.green.shade100,
-      ],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    ),
-    ),
-    child:
-      Center(
-        child:Column(
-            children: [
-              SizedBox(height: 250,),
-              Text("This will contain Fertilizer"),
-            ]
-        )
-    )
-      )
-    );
-  }
-}
-
-class Intercropping extends StatelessWidget {
-  const Intercropping({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-class Water extends StatelessWidget {
-  const Water({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: Text("Water Management", style: const TextStyle(
-            color: Color(0xFF156B34),
-            fontWeight: FontWeight.w700,
-            fontFamily: "Gilroy Heading",
-            fontSize: 25,
-          ),
-          ),
-          backgroundColor: Color(0xFFE8F5E9)
-      ),
-      body:  Container(
-      decoration: BoxDecoration(
-      gradient: LinearGradient(
-      colors: [
-      Colors.white,
-      Colors.green.shade50,
-      Colors.green.shade100,
-      ],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    ),
-    ),
-    child:
-      Center(
-        child:Column(
-            children: [
-              SizedBox(height: 250,),
-              Text("This will contain water management"),
-            ]
-        )
-    )
-      )
-    );
-  }
-}
-
-class Harvesting extends StatelessWidget {
-  const Harvesting({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: Text("Harvesting", style: const TextStyle(
-            color: Color(0xFF156B34),
-            fontWeight: FontWeight.w700,
-            fontFamily: "Gilroy Heading",
-            fontSize: 25,
-          ),
-          ),
-          backgroundColor: Color(0xFFE8F5E9)
-      ),
-      body:  Container(
-      decoration: BoxDecoration(
-      gradient: LinearGradient(
-      colors: [
-      Colors.white,
-      Colors.green.shade50,
-      Colors.green.shade100,
-      ],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    ),
-    ),
-    child:
-      Center(
-        child: Column(
-            children: [
-              SizedBox(height: 250,),
-              Text("This will contain Harvesting Details"),
-            ]
-        )
-    )
-      )
-    );
-  }
-}
-
-
-
-
-

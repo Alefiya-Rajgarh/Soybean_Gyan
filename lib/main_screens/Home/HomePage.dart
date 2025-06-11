@@ -8,6 +8,8 @@ import 'package:soybean_gyan/main_screens/Home/MarketPrice/market_price.dart';
 import 'package:soybean_gyan/main_screens/Home/smart_soy.dart';
 import 'package:soybean_gyan/main_screens/Home/SoyFood/soy_food.dart';
 import 'package:soybean_gyan/main_screens/Home/WeedManagement/weed_manage.dart';
+import 'package:soybean_gyan/main_screens/Home/CropManagement/crop_details_screen.dart';
+import 'package:soybean_gyan/main_screens/Home/CropManagement/crop_data.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -65,6 +67,11 @@ class _HomePageState extends State<HomePage> {
     {"title": "Water", "image": "assets/images/Crop manage/water.png"},
     {"title": "Harvesting", "image": "assets/images/Crop manage/harvest.png"},
   ];
+  
+  final fertilizer = allCrops[6];
+  final harvest = allCrops[2];
+  final water = allCrops[8];
+  final soil = allCrops[0];
 
   @override
   void initState() {
@@ -290,17 +297,17 @@ class _HomePageState extends State<HomePage> {
                                 else if (index == 3)
                                   return SoyFood();
                                 else if (index == 4)
-                                  return Fertilizers();
+                                  return CropDetailscreen(crop : fertilizer);
                                 else if (index == 5)
-                                  return SoilRequirement();
+                                  return CropDetailscreen(crop: soil);
                                 else if (index == 6)
                                   return DiseaseManage();
                                 else if (index == 7)
                                   return WeedManage();
                                 else if (index == 8)
-                                  return Water();
+                                  return CropDetailscreen(crop : water);
                                 else if (index == 9)
-                                  return Harvesting();
+                                  return CropDetailscreen(crop : harvest);
                                 else
                                   return Placeholder();
                               },
