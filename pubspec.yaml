@@ -87,7 +87,8 @@ flutter:
       - assets/images/Soy Food/
       - assets/images/Weed manage/
       - assets/images/Disease manage/
-      - assets/fonts/
+      - assets/images/Tools/
+#      - assets/fonts/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

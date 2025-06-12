@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'insect_data.dart';
-import 'insect_detailscreen.dart';
+import 'tools_data.dart';
+import 'tools_detail_section.dart';
 
 class Tools extends StatefulWidget {
   const Tools({super.key});
@@ -12,21 +12,7 @@ class Tools extends StatefulWidget {
 class _ToolsState extends State<Tools> {
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
-    final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Insect Management",
-          style: const TextStyle(
-            color: Color(0xFF156B34),
-            fontWeight: FontWeight.w700,
-            fontFamily: "Gilroy Heading",
-            fontSize: 25,
-          ),
-        ),
-        backgroundColor: Color(0xFFE8F5E9),
-      ),
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -37,15 +23,15 @@ class _ToolsState extends State<Tools> {
         ),
         child: ListView.builder(
           padding: EdgeInsets.all(15),
-          itemCount: allInsects.length,
+          itemCount: allTools.length,
           itemBuilder: (context, index) {
-            final insect = allInsects[index];
+            final tools = allTools[index];
             return InkWell(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => InsectDetailscreen(insect : insect),
+                    builder: (context) => ToolsDetailscreen(tools: tools),
                   ),
                 );
               },
@@ -55,7 +41,7 @@ class _ToolsState extends State<Tools> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                    image: AssetImage(insect.image_path),
+                    image: AssetImage(tools.image_path),
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
                       Colors.black.withOpacity(0.3),
@@ -65,7 +51,7 @@ class _ToolsState extends State<Tools> {
                 ),
                 alignment: Alignment.center,
                 child: Text(
-                  insect.name,
+                  tools.name,
                   style: TextStyle(
                     fontSize: 25,
                     color: Colors.white,
