@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class TextFieldInput extends StatelessWidget {
   final TextEditingController textEditingController;

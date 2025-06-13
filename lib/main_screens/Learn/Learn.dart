@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class Learn extends StatefulWidget {
   const Learn({super.key});
@@ -14,11 +15,11 @@ class _LearnState extends State<Learn> {
       child:Column(
     children: [
       SizedBox(height: 250,),
-      Text("This will include: "),
-      Text("Video Gallery "),
-      Text("Farmer Advisory "),
-      Text("pre-disposing factors "),
-      Text("Good Agri Practices "),
+      TranslatedText("This will include: "),
+      TranslatedText("Video Gallery "),
+      TranslatedText("Farmer Advisory "),
+      TranslatedText("pre-disposing factors "),
+      TranslatedText("Good Agri Practices "),
       ]
       )
     );

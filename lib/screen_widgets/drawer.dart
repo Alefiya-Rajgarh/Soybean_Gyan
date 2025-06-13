@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -22,7 +23,7 @@ class CustomDrawer extends StatelessWidget {
                   // backgroundColor: Colors.white,
                 ),
                 SizedBox(height: 10),
-                Text(
+                TranslatedText(
                   'Soybean Gyan',
                   style: TextStyle(
                     color: Color(0xFF156B34),
@@ -36,32 +37,32 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.agriculture),
-            title: Text('Farmer Problems & Solutions'),
+            title: TranslatedText('Farmer Problems & Solutions'),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(Icons.question_answer),
-            title: Text('FAQs'),
+            title: TranslatedText('FAQs'),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(Icons.call),
-            title: Text('Contact Us'),
+            title: TranslatedText('Contact Us'),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(Icons.share),
-            title: Text('Share App'),
+            title: TranslatedText('Share App'),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(Icons.star_rate),
-            title: Text('Rate Us'),
+            title: TranslatedText('Rate Us'),
             onTap: () {},
           ),
           ListTile(
             leading: Icon(Icons.info),
-            title: Text('About'),
+            title: TranslatedText('About'),
             onTap: () {},
           ),
         ],

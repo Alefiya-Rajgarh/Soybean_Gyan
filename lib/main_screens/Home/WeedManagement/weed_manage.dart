@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class WeedManage extends StatefulWidget {
   const WeedManage({super.key});
@@ -12,7 +13,7 @@ class _WeedManageState extends State<WeedManage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text("Weed Management", style: const TextStyle(
+          title: TranslatedText("Weed Management", style: const TextStyle(
             color: Color(0xFF156B34),
             fontWeight: FontWeight.w700,
             fontFamily: "Gilroy Heading",
@@ -38,7 +39,7 @@ class _WeedManageState extends State<WeedManage> {
         child:Column(
             children: [
               SizedBox(height: 250,),
-              Text("This will contain Weed management"),
+              TranslatedText("This will contain Weed management"),
             ]
         )
     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
@@ -57,8 +58,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
         ),
         onChanged: widget.onSearch,
       )
-          : Text(
-        widget.title,
+          :TranslatedText(widget.title,
         style: const TextStyle(
           color: Color(0xFF156B34),
           fontWeight: FontWeight.w700,

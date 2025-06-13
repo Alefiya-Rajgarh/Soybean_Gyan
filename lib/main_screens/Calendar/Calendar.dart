@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class Calendar extends StatefulWidget {
   const Calendar({super.key});
@@ -14,8 +15,8 @@ class _CalendarState extends State<Calendar> {
         child:Column(
             children: [
               SizedBox(height: 250,),
-              Text("Weather forecast and other Calender "),
-              Text("related things will come here "),
+              TranslatedText("Weather forecast and other Calender "),
+              TranslatedText("related things will come here "),
          ]
         )
     );

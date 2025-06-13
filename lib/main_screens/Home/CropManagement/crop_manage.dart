@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'crop_data.dart';
 import 'crop_details_screen.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class CropManage extends StatefulWidget {
   const CropManage({super.key});
@@ -16,7 +17,7 @@ class _CropMangeState extends State<CropManage> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: TranslatedText(
           "Crop Management",
           style: const TextStyle(
             color: Color(0xFF156B34),
@@ -64,7 +65,7 @@ class _CropMangeState extends State<CropManage> {
                   ),
                 ),
                 alignment: Alignment.center,
-                child: Text(
+                child: TranslatedText(
                   crop.name,
                   style: TextStyle(
                     fontSize: 25,

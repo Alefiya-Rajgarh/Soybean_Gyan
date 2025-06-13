@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'insect_data.dart';
 import 'insect_detailscreen.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class InsectPage extends StatefulWidget {
   const InsectPage({super.key});
@@ -16,7 +17,7 @@ class _InsectPageState extends State<InsectPage> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: TranslatedText(
           "Insect Management",
           style: const TextStyle(
             color: Color(0xFF156B34),
@@ -64,7 +65,7 @@ class _InsectPageState extends State<InsectPage> {
                   ),
                 ),
                 alignment: Alignment.center,
-                child: Text(
+                child: TranslatedText(
                   insect.name,
                   style: TextStyle(
                     fontSize: 25,

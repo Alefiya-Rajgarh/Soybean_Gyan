@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class SmartSoy extends StatefulWidget {
   const SmartSoy({super.key});
@@ -12,7 +13,7 @@ class _SmartSoyState extends State<SmartSoy> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: Text("Soy Food", style: const TextStyle(
+            title: TranslatedText("Soy Food", style: const TextStyle(
               color: Color(0xFF156B34),
               fontWeight: FontWeight.w700,
               fontFamily: "Gilroy Heading",
@@ -38,7 +39,7 @@ class _SmartSoyState extends State<SmartSoy> {
             child:Column(
                 children: [
                   SizedBox(height: 250,),
-                  Text("This will contain Soy food"),
+                  TranslatedText("This will contain Soy food"),
                 ]
             ),
           ),

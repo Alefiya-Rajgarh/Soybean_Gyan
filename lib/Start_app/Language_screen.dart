@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soybean_gyan/widget/Button.dart';
+import 'package:provider/provider.dart';
+import 'package:soybean_gyan/services/LanguageProvider.dart';
 
 class language extends StatefulWidget {
   const language({super.key});
@@ -12,11 +14,13 @@ class language extends StatefulWidget {
 class _languageState extends State<language>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
+  String _currentlyTappedLangCode = 'en';
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(vsync: this);
+    _currentlyTappedLangCode = Provider.of<LanguageProvider>(context, listen: false).selectedLangCode;
   }
 
   @override
@@ -25,7 +29,12 @@ class _languageState extends State<language>
     super.dispose();
   }
 
-  String selectedLanguage = 'English';
+  // Future<void> _saveLanguagePreference(String langCode) async {
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   await prefs.setString('selectedLangCode', langCode);
+  // }
+
+  String selectedLangCode = 'en';
 
   final List<Map<String, String>> languages = [
     {'code': 'en', 'label': 'English', 'script': 'En'},
@@ -38,10 +47,19 @@ class _languageState extends State<language>
     {'code': 'bn', 'label': 'বাংলা', 'script': 'ব'}, //bengali
     {'code': 'pa', 'label': 'ਪੰਜਾਬੀ', 'script': 'ਪ'}, //punjabi
     {'code': 'gu', 'label': 'ગુજરાતી', 'script': 'ગ'}, //gujarati
+    {'code': 'as', 'label': 'অসমীয়া', 'script': 'অ'}, //assamese
+    {'code': 'ur', 'label': 'اُردُو', 'script': 'ا'}, //urdu
+    {'code': 'or', 'label': 'ଓଡ଼ିଆ', 'script': 'ଓ'},//oriya
+    {'code': 'sa', 'label': 'संस्कृतम्', 'script': 'स'},//sanscrit
+    {'code': 'sd', 'label': 'سنڌي', 'script': 'س'},//sindhi
+    {'code': 'mni', 'label': 'মৈতৈলোন্', 'script': 'ম'},//manipuri
+    {'code': 'ne', 'label': '	नेपाली', 'script': 'न'},
   ];
 
   @override
   Widget build(BuildContext context) {
+    // Access the LanguageProvider to get the selected code for highlighting
+    final languageProvider = Provider.of<LanguageProvider>(context);
     final screenHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -71,11 +89,13 @@ class _languageState extends State<language>
               physics: BouncingScrollPhysics(),
               children:
                   languages.map((lang) {
-                    final isSelected = selectedLanguage == lang['label'];
+                    final isSelected = selectedLangCode == lang['code'];
                     return GestureDetector(
                       onTap: () {
+                        languageProvider.changeLanguage(lang['code']!);
                         setState(() {
-                          selectedLanguage = lang['label']!;
+                          selectedLangCode = lang['code']!;
+                          _currentlyTappedLangCode = lang['code']!;
                         });
                       },
                       child: Container(
@@ -134,6 +154,8 @@ class _languageState extends State<language>
 
             child: MyButton(
               onTab: () {
+                languageProvider.changeLanguage(_currentlyTappedLangCode);
+                // _saveLanguagePreference(_currentlyTappedLangCode);
                 Navigator.pushReplacementNamed(context, '/home');
               },
               text: "Next",

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'soyfood_data.dart';
 import 'soyfood_details.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class SoyFood extends StatefulWidget {
   const SoyFood({super.key});
@@ -14,7 +15,7 @@ class _SoyFoodState extends State<SoyFood> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: TranslatedText(
           "Soy Foods",
           style: const TextStyle(
             color: Color(0xFF156B34),
@@ -62,7 +63,7 @@ class _SoyFoodState extends State<SoyFood> {
                   ),
                 ),
                 alignment: Alignment.center,
-                child: Text(
+                child: TranslatedText(
                   soyfood.name,
                   style: TextStyle(
                     fontSize: 25,

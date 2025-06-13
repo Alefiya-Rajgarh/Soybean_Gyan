@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widget/Button.dart';
 import 'package:flutter/src/rendering/box.dart';
+// import 'package:soybean_gyan/services/LanguageProvider.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 class splashscreen extends StatefulWidget {
   const splashscreen({super.key});
@@ -10,6 +12,35 @@ class splashscreen extends StatefulWidget {
 }
 
 class _splashscreenState extends State<splashscreen> {
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _navigateToNextScreen();
+  // }
+  //
+  // Future<void> _navigateToNextScreen() async {
+  //   // Optional: Load last selected language and set it in provider
+  //   // This allows skipping language screen if already selected.
+  //   SharedPreferences prefs = await SharedPreferences.getInstance();
+  //   String? savedLangCode = prefs.getString('selectedLangCode');
+  //
+  //   // Get the provider instance (listen: false as we're in initState)
+  //   final languageProvider = Provider.of<LanguageProvider>(context, listen: false);
+  //
+  //   Timer(const Duration(seconds: 3), () {
+  //     if (savedLangCode != null && savedLangCode.isNotEmpty) {
+  //       languageProvider.changeLanguage(savedLangCode); // Set it in provider
+  //       Navigator.pushReplacementNamed(context, '/home');
+  //     } else {
+  //       // If no language saved, or if you always want to show language screen first time:
+  //       // Ensure provider is at 'en' if no language is saved yet from prefs.
+  //       // The provider defaults to 'en', so this might be redundant unless logic changes.
+  //       languageProvider.changeLanguage('en');
+  //       Navigator.pushReplacementNamed(context, '/lang');
+  //     }
+  //   });
+  // }
+  //
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;

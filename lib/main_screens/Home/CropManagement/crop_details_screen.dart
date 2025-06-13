@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'crop_data.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class CropDetailscreen extends StatelessWidget {
   final Crop crop;
@@ -35,7 +36,7 @@ class CropDetailscreen extends StatelessWidget {
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
-                  child: Text(
+                  child: TranslatedText(
                     "No details available for ${crop.name}.",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -85,7 +86,7 @@ class _SliverTabBarDelegate extends SliverPersistentHeaderDelegate {
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: FittedBox(
                   fit: BoxFit.scaleDown,
-                  child: Text(
+                  child: TranslatedText(
                     title,
                     style: TextStyle(
                       fontSize: titleSize > 20 ? titleSize : 20,
@@ -130,7 +131,7 @@ class DetailSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            TranslatedText(
               item.title,
               style: TextStyle(
                 fontSize: 22,
@@ -140,7 +141,7 @@ class DetailSection extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            Text(
+            TranslatedText(
               item.description,
               style: TextStyle(
                 fontSize: 19,

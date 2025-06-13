@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'insect_data.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class InsectDetailscreen extends StatelessWidget {
   final Insect insect;
@@ -7,6 +8,11 @@ class InsectDetailscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<String> originalTabTitles = [
+    "Identification",
+    "Damage",
+    "Management"
+    ];
     return DefaultTabController(
       length: 3,
       child: Scaffold(
@@ -31,7 +37,7 @@ class InsectDetailscreen extends StatelessWidget {
                 ),
                 SliverPersistentHeader(
                   delegate: _SliverTabBarDelegate(
-                    const TabBar(
+                     TabBar(
                       labelPadding: EdgeInsets.symmetric(horizontal: 1),
                       labelColor: Color(0xFF00796B),
                       labelStyle: TextStyle(
@@ -46,11 +52,18 @@ class InsectDetailscreen extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                       ),
                       indicatorColor: Color(0xFF156B34),
-                      tabs: [
-                        Tab(text: "Identification"),
-                        Tab(text: "Damage"),
-                        Tab(text: "Management"),
-                      ],
+                      tabs: originalTabTitles.map((title) {
+                        return Tab(
+                          child: TranslatedText(
+                            title,
+                            style: TextStyle(
+                            fontSize: 18,
+                            fontFamily: "Gilroy Heading",
+                            fontWeight: FontWeight.w400,
+                        ),
+                        ),
+                        );
+                      }).toList(),
                     ),
                     insect.title,
                   ),
@@ -103,7 +116,7 @@ class _SliverTabBarDelegate extends SliverPersistentHeaderDelegate {
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: FittedBox(
                   fit: BoxFit.scaleDown,
-                  child: Text(
+                  child: TranslatedText(
                     title,
                     style: const TextStyle(
                       fontSize: 22,
@@ -147,7 +160,7 @@ class DetailSection extends StatelessWidget {
       //margin: const EdgeInsets.all(8),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
       child: Center(
-        child: Text(
+        child: TranslatedText(
           content,
           style: TextStyle(
             fontSize: 17,

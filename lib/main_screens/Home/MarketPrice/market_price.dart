@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class MarketPrice extends StatefulWidget {
   const MarketPrice({super.key});
@@ -12,7 +13,7 @@ class _MarketPriceState extends State<MarketPrice> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-        title: Text("Market Price", style: const TextStyle(
+        title: TranslatedText("Market Price", style: const TextStyle(
         color: Color(0xFF156B34),
     fontWeight: FontWeight.w700,
     fontFamily: "Gilroy Heading",
@@ -38,7 +39,7 @@ class _MarketPriceState extends State<MarketPrice> {
         child:Column(
             children: [
               SizedBox(height: 250,),
-              Text("This will contain Market price"),
+              TranslatedText("This will contain Market price"),
             ]
         )
       )

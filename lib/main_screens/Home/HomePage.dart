@@ -10,6 +10,7 @@ import 'package:soybean_gyan/main_screens/Home/SoyFood/soy_food.dart';
 import 'package:soybean_gyan/main_screens/Home/WeedManagement/weed_manage.dart';
 import 'package:soybean_gyan/main_screens/Home/CropManagement/crop_details_screen.dart';
 import 'package:soybean_gyan/main_screens/Home/CropManagement/crop_data.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -116,7 +117,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           alignment: Alignment.center,
-          child: Text(
+          child: TranslatedText(
             title,
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -171,7 +172,7 @@ class _HomePageState extends State<HomePage> {
                   padding: const EdgeInsets.symmetric(horizontal: 8),
                   child: FittedBox(
                     fit: BoxFit.scaleDown,
-                    child: Text(
+                    child: TranslatedText(
                       title,
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -328,7 +329,7 @@ class _HomePageState extends State<HomePage> {
                           padding: const EdgeInsets.symmetric(horizontal: 1),
                           child: FittedBox(
                             fit: BoxFit.scaleDown,
-                            child: Text(
+                            child: TranslatedText(
                               ' Making Soybean \n Farming Better',
                               style: TextStyle(
                                 fontSize: 35,
@@ -350,7 +351,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.symmetric(horizontal: 70),
                     child: Align(
                       alignment: Alignment.centerLeft,
-                      child: Text(
+                      child: TranslatedText(
                         'Crafted with love 💚',
                         style: TextStyle(
                           fontSize: 15,

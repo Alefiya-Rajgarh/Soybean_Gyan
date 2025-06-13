@@ -6,6 +6,8 @@ import 'Home/HomePage.dart';
 import 'Learn/Learn.dart';
 import 'Calendar/Calendar.dart';
 import 'Tools/Tools.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
+import 'package:soybean_gyan/services/LanguageProvider.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

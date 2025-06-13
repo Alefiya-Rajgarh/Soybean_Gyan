@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'tools_data.dart';
 import 'tools_detail_section.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class Tools extends StatefulWidget {
   const Tools({super.key});
@@ -50,7 +51,7 @@ class _ToolsState extends State<Tools> {
                   ),
                 ),
                 alignment: Alignment.center,
-                child: Text(
+                child: TranslatedText(
                   tools.name,
                   style: TextStyle(
                     fontSize: 25,

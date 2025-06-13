@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'soyfood_data.dart';
+import 'package:soybean_gyan/services/TranslatedText.dart';
 
 class SoyfoodDetailscreen extends StatelessWidget {
   final Soyfood soyfood;
@@ -53,24 +54,30 @@ class _SliverTabBarDelegate extends SliverPersistentHeaderDelegate {
         color: Color(0xFFE8F5E9),
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
             SizedBox(height: screenHeight * 0.02),
-             Align(
-                    alignment: Alignment.center,
-                  child : Text(
-                    title,
-                    style: const TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w700,
-                      fontFamily: "Gilroy Heading",
-                      color: Color(0xFF156B34),
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  ),
-          ],
+        Flexible(
+          flex: 2,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: TranslatedText(
+                title,
+                style: const TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w700,
+                  fontFamily: "Gilroy Heading",
+                  color: Color(0xFF156B34),
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
         ),
+        ]
+      ),
       ),
     );
   }
@@ -99,7 +106,7 @@ class DetailSection extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
         child: Center(
           child:
-        Text(
+        TranslatedText(
           content,
           style: TextStyle(
             fontSize: 20,
