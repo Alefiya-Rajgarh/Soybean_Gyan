@@ -50,10 +50,8 @@ class _languageState extends State<language>
     {'code': 'as', 'label': 'অসমীয়া', 'script': 'অ'}, //assamese
     {'code': 'ur', 'label': 'اُردُو', 'script': 'ا'}, //urdu
     {'code': 'or', 'label': 'ଓଡ଼ିଆ', 'script': 'ଓ'},//oriya
-    {'code': 'sa', 'label': 'संस्कृतम्', 'script': 'स'},//sanscrit
-    {'code': 'sd', 'label': 'سنڌي', 'script': 'س'},//sindhi
-    {'code': 'mni', 'label': 'মৈতৈলোন্', 'script': 'ম'},//manipuri
-    {'code': 'ne', 'label': '	नेपाली', 'script': 'न'},
+    //{'code': 'sa', 'label': 'संस्कृतम्', 'script': 'स'},//sanscrit
+    {'code': 'ne', 'label': '	नेपाली', 'script': 'न'}, //nepali
   ];
 
   @override

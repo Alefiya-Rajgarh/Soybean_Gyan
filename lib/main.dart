@@ -42,9 +42,7 @@ class MyApp extends StatelessWidget {
         Locale('as', ''), // Assamese
         Locale('ur', ''), // Urdu
         Locale('or', ''), // Oriya
-        Locale('sa', ''), // Sanskrit
-        Locale('sd', ''), // Sindhi
-        Locale('mni', ''), // Manipuri
+        // Locale('sa', ''), // Sanskrit
         Locale('ne', ''), // Nepali
         // Add all languages you intend to support with .arb files
       ],
