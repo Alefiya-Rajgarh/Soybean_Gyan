@@ -46,7 +46,7 @@ class _InsectPageState extends State<InsectPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => InsectDetailscreen(insect : insect),
+                    builder: (context) => InsectDetailscreen(insect: insect),
                   ),
                 );
               },
@@ -73,6 +73,7 @@ class _InsectPageState extends State<InsectPage> {
                     fontWeight: FontWeight.w800,
                     fontFamily: "Gilroy Heading",
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             );

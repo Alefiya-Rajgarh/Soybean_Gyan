@@ -73,6 +73,7 @@ class _CropMangeState extends State<CropManage> {
                     fontWeight: FontWeight.w800,
                     fontFamily: "Gilroy Heading",
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             );

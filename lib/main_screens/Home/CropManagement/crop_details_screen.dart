@@ -9,6 +9,7 @@ class CropDetailscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green.shade100,
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -125,7 +126,7 @@ class DetailSection extends StatelessWidget {
           end: Alignment.bottomCenter,
         ),
       ),
-      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

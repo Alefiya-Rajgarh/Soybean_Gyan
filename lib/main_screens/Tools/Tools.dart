@@ -59,6 +59,7 @@ class _ToolsState extends State<Tools> {
                     fontWeight: FontWeight.w800,
                     fontFamily: "Gilroy Heading",
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             );

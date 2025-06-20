@@ -16,6 +16,7 @@ class ToolsDetailscreen extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        backgroundColor: Colors.green.shade100,
         body: NestedScrollView(
           headerSliverBuilder:
               (context, innerBoxIsScrolled) => [
@@ -71,11 +72,26 @@ class ToolsDetailscreen extends StatelessWidget {
             ),
           ],
           body: TabBarView(
-            children: [
-              DetailSection(content: tools.Features),
-              DetailSection(content: tools.Cost),
-              DetailSection(content: tools.Procurement),
-            ],
+            children:
+            originalTabTitles.map((title) {
+              String contentToShow = "";
+              switch (title) {
+                case "Features":
+                  contentToShow = tools.Features?? "Not available";
+                  break;
+                case "Cost":
+                  contentToShow = tools.Cost ?? "Not available";
+                  break;
+                case "Procurement":
+                  contentToShow = tools.Procurement?? "Not available";
+                  break;
+              }
+              // Apply padding to the top of each TabBarView child
+              return Padding(
+                padding: const EdgeInsets.only(top: 90), // <--- KEY CHANGE
+                child: DetailSection(content: contentToShow),
+              );
+            }).toList(),
           ),
         ),
       ),
@@ -149,7 +165,7 @@ class DetailSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SingleChildScrollView(child:  Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
@@ -163,12 +179,13 @@ class DetailSection extends StatelessWidget {
         child: TranslatedText(
           content,
           style: TextStyle(
-            fontSize: 17,
+            fontSize: 20,
             fontWeight: FontWeight.w600,
             color: Color(0xFF00796B),
           ),
         ),
       ),
+    ),
     );
   }
 }

@@ -9,13 +9,14 @@ class InsectDetailscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> originalTabTitles = [
-    "Identification",
-    "Damage",
-    "Management"
+      "Identification",
+      "Damage",
+      "Management",
     ];
     return DefaultTabController(
       length: 3,
       child: Scaffold(
+        backgroundColor: Colors.green.shade100,
         body: NestedScrollView(
           headerSliverBuilder:
               (context, innerBoxIsScrolled) => [
@@ -37,8 +38,8 @@ class InsectDetailscreen extends StatelessWidget {
                 ),
                 SliverPersistentHeader(
                   delegate: _SliverTabBarDelegate(
-                     TabBar(
-                      labelPadding: EdgeInsets.symmetric(horizontal: 1),
+                    TabBar(
+                      labelPadding: EdgeInsets.symmetric(horizontal: 0),
                       labelColor: Color(0xFF00796B),
                       labelStyle: TextStyle(
                         fontSize: 18,
@@ -52,18 +53,19 @@ class InsectDetailscreen extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                       ),
                       indicatorColor: Color(0xFF156B34),
-                      tabs: originalTabTitles.map((title) {
-                        return Tab(
-                          child: TranslatedText(
-                            title,
-                            style: TextStyle(
-                            fontSize: 18,
-                            fontFamily: "Gilroy Heading",
-                            fontWeight: FontWeight.w400,
-                        ),
-                        ),
-                        );
-                      }).toList(),
+                      tabs:
+                          originalTabTitles.map((title) {
+                            return Tab(
+                              child: TranslatedText(
+                                title,
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontFamily: "Gilroy Heading",
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            );
+                          }).toList(),
                     ),
                     insect.title,
                   ),
@@ -71,11 +73,26 @@ class InsectDetailscreen extends StatelessWidget {
                 ),
               ],
           body: TabBarView(
-            children: [
-              DetailSection(content: insect.identification),
-              DetailSection(content: insect.damage),
-              DetailSection(content: insect.management),
-            ],
+            children:
+                originalTabTitles.map((title) {
+                  String contentToShow = "";
+                  switch (title) {
+                    case "Identification":
+                      contentToShow = insect.identification ?? "Not available";
+                      break;
+                    case "Damage":
+                      contentToShow = insect.damage ?? "Not available";
+                      break;
+                    case "Management":
+                      contentToShow = insect.management ?? "Not available";
+                      break;
+                  }
+                  // Apply padding to the top of each TabBarView child
+                  return Padding(
+                    padding: const EdgeInsets.only(top: 90), // <--- KEY CHANGE
+                    child: DetailSection(content: contentToShow),
+                  );
+                }).toList(),
           ),
         ),
       ),
@@ -149,23 +166,25 @@ class DetailSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
+    return SingleChildScrollView(
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
         ),
-      ),
-      //margin: const EdgeInsets.all(8),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
-      child: Center(
-        child: TranslatedText(
-          content,
-          style: TextStyle(
-            fontSize: 17,
-            fontWeight: FontWeight.w600,
-            color: Color(0xFF00796B),
+        //margin: const EdgeInsets.all(8),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
+        child: Center(
+          child: TranslatedText(
+            content,
+            style: TextStyle(
+              fontSize: 19,
+              fontWeight: FontWeight.w600,
+              color: Color(0xFF00796B),
+            ),
           ),
         ),
       ),

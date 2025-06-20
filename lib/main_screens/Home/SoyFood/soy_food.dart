@@ -44,7 +44,7 @@ class _SoyFoodState extends State<SoyFood> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SoyfoodDetailscreen(soyfood : soyfood),
+                    builder: (context) => SoyfoodDetailscreen(soyfood: soyfood),
                   ),
                 );
               },
@@ -71,6 +71,7 @@ class _SoyFoodState extends State<SoyFood> {
                     fontWeight: FontWeight.w800,
                     fontFamily: "Gilroy Heading",
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             );
