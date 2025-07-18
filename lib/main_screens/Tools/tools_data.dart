@@ -63,7 +63,7 @@ final List<Tools> allTools = [
         "The machine presently costs Rs. 67,200/-which is likely to be revised as and when needed. This excludes the cost of transport which is to be borne by buyer.",
     Procurement:
         "Order and payment for Soybean Seed Drill cum Planter (two in one) machine is to be made to Director, DSR, Khandwa Road, Indore 452001, M.P.",
-    image_path: "assets/images/Tools/soybean seed drill.jpg",
+    image_path: "assets/images/Tools/soybean seed drill.jpeg",
   ),
   Tools(
     name: "Subsoiler",

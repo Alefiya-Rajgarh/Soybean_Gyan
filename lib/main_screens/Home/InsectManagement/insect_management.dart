@@ -68,9 +68,9 @@ class _InsectPageState extends State<InsectPage> {
                 child: TranslatedText(
                   insect.name,
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 26,
                     color: Colors.white,
-                    fontWeight: FontWeight.w800,
+                    fontWeight: FontWeight.w900,
                     fontFamily: "Gilroy Heading",
                   ),
                   textAlign: TextAlign.center,

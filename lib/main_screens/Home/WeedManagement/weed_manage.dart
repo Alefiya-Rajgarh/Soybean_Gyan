@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
 import 'weed_data.dart';
 import 'weed_detailscreen.dart';
-import 'weed_images.dart';
+import 'types_of_weed.dart';
 
 class WeedManage extends StatefulWidget {
   const WeedManage({super.key});
@@ -76,7 +76,7 @@ class _WeedManageState extends State<WeedManage> {
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
-                    fontWeight: FontWeight.w800,
+                    fontWeight: FontWeight.w900,
                     fontFamily: "Gilroy Heading",
                   ), textAlign: TextAlign.center,
                 ),

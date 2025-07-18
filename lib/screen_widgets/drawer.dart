@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    Future<void> _launchUrl(String urlString) async {
+      final Uri url = Uri.parse(urlString);
+      if (!await launchUrl(url, mode: LaunchMode.externalApplication )) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Could not open the link.')),
+        );
+      }
+    }
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
@@ -38,7 +48,9 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.agriculture),
             title: TranslatedText('Farmer Problems & Solutions'),
-            onTap: () {},
+            onTap: () {
+              _launchUrl("https://services.india.gov.in/service/search?kw=problem&ln=en&cat_id_search=&location=district&state_id=&district_name=&pin_code=");
+            },
           ),
           ListTile(
             leading: Icon(Icons.question_answer),

@@ -136,9 +136,10 @@ class DetailSection extends StatelessWidget {
               item.title,
               style: TextStyle(
                 fontSize: 22,
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w900,
                 fontFamily: "Gilroy Regular",
-                color: Color(0xFF00796B),
+                color:
+                  Color(0xFF00695C),
               ),
             ),
             const SizedBox(height: 8),

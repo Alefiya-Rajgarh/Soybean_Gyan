@@ -122,7 +122,7 @@ class _languageState extends State<language>
                               lang['script']!,
                               style: TextStyle(
                                 fontSize: 32,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.w700,
                                 fontFamily: "Gilroy Regular",
                                 color: Color(0xFF156B34),
                               ),

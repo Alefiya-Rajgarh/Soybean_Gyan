@@ -124,13 +124,13 @@ class fungalDetails extends StatelessWidget {
                       labelPadding: EdgeInsets.symmetric(horizontal: 0),
                       labelColor: Color(0xFF00796B),
                       labelStyle: TextStyle(
-                        fontSize: 18,
+                        fontSize: 17,
                         fontFamily: "Gilroy Heading",
                         fontWeight: FontWeight.w400,
                       ),
                       unselectedLabelColor: Colors.grey,
                       unselectedLabelStyle: TextStyle(
-                        fontSize: 18,
+                        fontSize: 17,
                         fontFamily: "Gilroy Heading",
                         fontWeight: FontWeight.w400,
                       ),

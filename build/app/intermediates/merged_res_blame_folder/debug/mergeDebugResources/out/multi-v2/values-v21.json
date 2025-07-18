@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.soybean_gyan.app-mergeDebugResources-39:/values-v21/values-v21.xml",
+            "outputFile": "com.example.soybean_gyan.app-mergeDebugResources-40:/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\alefi\\.gradle\\caches\\8.10.2\\transforms\\deb838f5c4813d0c441214e1ddf497cc\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",

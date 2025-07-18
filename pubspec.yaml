@@ -31,6 +31,8 @@ dependencies:
   http: ^1.4.0
   provider: ^6.1.5
   shared_preferences: ^2.5.3
+  url_launcher: ^6.3.1
+  connectivity_plus: ^6.1.4
   intl:
   flutter_localizations:
     sdk: flutter
@@ -95,7 +97,8 @@ flutter:
       - assets/images/Weed manage/
       - assets/images/Disease manage/
       - assets/images/Tools/
-      - assets/fonts/
+      - assets/images/learn/
+#      - assets/fonts/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -113,10 +116,12 @@ flutter:
      - family: Gilroy Heading
        fonts:
         - asset: assets/Fonts/Gilroy-Medium.ttf
+          weight: 800
 
      - family: Gilroy Regular
        fonts:
          - asset: assets/Fonts/Gilroy-Regular.ttf
+           weight: 700
 
 
   #           style: italic

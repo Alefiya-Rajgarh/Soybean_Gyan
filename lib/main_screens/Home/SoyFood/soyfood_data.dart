@@ -65,7 +65,7 @@ final List<Soyfood> allFoods = [
     name: "Soy Pakoda",
     recipe:
         "Add okara and besan in equal ratio. Add green chillies, ginger-garlic paste, finely chopped onion, and coriander leaves. Add spices (asafoetida, red chilli powder, coriander powder, salt) and mix well. The batter for preparing pakoras is ready. Heat oil in a wok and add small portions using your hand. Fry until golden brown and remove from oil.",
-    image_path: "assets/images/Soy Food/pakoda.jpg",
+    image_path: "assets/images/Soy Food/pakoda.png",
   ),
   Soyfood(
     name: "Soy Upma",

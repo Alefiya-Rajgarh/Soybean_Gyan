@@ -29,7 +29,7 @@ final List<Insect> allInsects = [
         " is to the tune of 5 q/ha. Its infestation is more under high soil moisture conditions.",
     management:
         "Blue beetle can be effectively controlled by the spray of Quinalphos 25 EC @ 1.5 l/ha.",
-    image_path: 'assets/images/Insect manage/blue beetle.jpg',
+    image_path: 'assets/images/Insect manage/blue beetle.jpeg',
   ),
   Insect(
     name: "Bihar Hairy Caterpillar",
@@ -40,7 +40,7 @@ final List<Insect> allInsects = [
         "Newly hatched larvae are gregarious and skeletomize the leaves by feeding on the chlorophyll content. After 8-10 days, larvae scatter to neighboring plants and consume leaves. If timely control measures are not taken, population of larvae and the damage increase very rapidly. On heavy incidence, they completely denude the plants. This results in reduction in grain number and weight per pod and ultimately in yield. Larvae damage the crop from July-August to October",
     management:
         "Generally the Bihar hairy caterpillar can be found in abundant numbers on a single soybean plant and feed on foliage leaving only veins. These plants should be removed and destroyed for preventing its further spread. If needed, the crop should be sprayed with Triazophos 40 EC (0.8 l/ha) or Quinolphos 25 EC (1.5 l/ha) or Indoxacarb 14.5 SC (0.3 l/ha) or Chlorentraniliprol 18.5 SC (0.10 l/ha) to manage the pests.",
-    image_path: 'assets/images/Insect manage/bihar caterpillar.jpg',
+    image_path: 'assets/images/Insect manage/bihar caterpillar.jpeg',
   ),
   Insect(
     name: "Brown Stripped Semilooper",
@@ -61,7 +61,7 @@ final List<Insect> allInsects = [
         "Girdle beetles cause damage to plants by feeding on the leaves and stems. This results in defoliation, stunted growth, and sometimes death of the plant. They can also transmit plant diseases, further weakening the crops.",
     management:
         "To manage girdle beetles, remove weeds around crops, as they serve as breeding sites. Use insecticides, especially those containing Pyrethroids or Neonicotinoids, to control their population. Regular monitoring of crops is essential for early detection.",
-    image_path: 'assets/images/Insect manage/gridle beetle.jpg',
+    image_path: 'assets/images/Insect manage/gridle beetle.png',
   ),
   Insect(
     name: "Gram Pod Borer",
@@ -72,7 +72,7 @@ final List<Insect> allInsects = [
         "Prior to pod initiation, larvae feed on young leaves, retarding plant growth. Subsequently, they feed on buds, flowers, young pods, and seeds within the developed pods. Heavy incidence can reduce the yield by 90 per cent. This insect damages the crop from July to October.",
     management:
         "The crop should be sprayed with Indoxacarb 14.5SC @0.3 lit/ha.",
-    image_path: 'assets/images/Insect manage/gram pod borer.jpg',
+    image_path: 'assets/images/Insect manage/gram pod borer.jpeg',
   ),
   Insect(
     name: "White Grub",
@@ -138,8 +138,8 @@ final List<Insect> allInsects = [
   ),
   Insect(
     name: "Green Semiloopers",
-    title: "Green Semiloopers [Chrysodeixis acuta Diachrysia orichalcea]",
-    identification: "Predominantly two types of green semiloopers damage soybean the most. One - Adults have two silvery spots on each of the forewings. Larvae are pale green, with greenish-blue and white longitudinal lines on the body. Two - Adults have a large, triangular golden spot on each of the forewings. Larvae are green in colour with minute spines on the body. Both types of larvae form semilooper while in movement",
+    title: "Green Semiloopers ",
+    identification: "Scientific name :[Chrysodeixis acuta Diachrysia orichalcea] Predominantly two types of green semiloopers damage soybean the most. One - Adults have two silvery spots on each of the forewings. Larvae are pale green, with greenish-blue and white longitudinal lines on the body. Two - Adults have a large, triangular golden spot on each of the forewings. Larvae are green in colour with minute spines on the body. Both types of larvae form semilooper while in movement",
     damage: "Young larvae scratch the leaves, leaving only white membrane. Grown up larvae feed on leaves making differently shaped holes. On heavy incidence, only leaf-veins are seen on the plant. Defoliation may result up to 50% reduction in yield. These larvae reach their peak activity during August-September.",
     management: "The crop should be sprayed with Indoxacarb 14.5SC @0.3 lit/ha.",
     image_path: 'assets/images/Insect manage/green semilooper.png',

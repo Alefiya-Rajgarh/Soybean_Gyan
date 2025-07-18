@@ -13,7 +13,7 @@ class _SmartSoyState extends State<SmartSoy> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            title: TranslatedText("Soy Food", style: const TextStyle(
+            title: TranslatedText("Smart Soy", style: const TextStyle(
               color: Color(0xFF156B34),
               fontWeight: FontWeight.w700,
               fontFamily: "Gilroy Heading",
@@ -39,7 +39,7 @@ class _SmartSoyState extends State<SmartSoy> {
             child:Column(
                 children: [
                   SizedBox(height: 250,),
-                  TranslatedText("This will contain Soy food"),
+                  TranslatedText("This will contain Smart Soy"),
                 ]
             ),
           ),

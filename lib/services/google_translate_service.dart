@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart'; // For kDebugMode
 
 class GoogleTranslateService {
   final String _apiKey = 'AIzaSyCfT5ch_AODuBaDP_m9HUmLbS6k0QF0fKE';
-
   final String _baseUrl = 'https://translation.googleapis.com/language/translate/v2';
 
   Future<String?> translate(String text, String targetLanguage,

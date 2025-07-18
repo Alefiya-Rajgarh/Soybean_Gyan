@@ -14,12 +14,12 @@ class Weed {
 final List<Weed> allweedDetail = [
   Weed(
     title: "Types of Weed",
-    image_path: "assets/images/sample image.jpg",
+    image_path: "assets/images/Weed manage/types of weed.jpeg",
     details: [],
   ),
   Weed(
     title: "Losses due to Weed",
-    image_path: "assets/images/sample image.jpg",
+    image_path: "assets/images/Weed manage/loses.jpeg",
     details: [
       Details(
         description:
@@ -29,7 +29,7 @@ final List<Weed> allweedDetail = [
   ),
   Weed(
     title: " Weed Management Practices",
-    image_path: "assets/images/sample image.jpg",
+    image_path: "assets/images/Weed manage/weed management.png",
     details: [
       Details(
         description:
@@ -43,7 +43,7 @@ final List<Weed> allweedDetail = [
   ),
   Weed(
     title: "General Practices",
-    image_path: "assets/images/sample image.jpg",
+    image_path: "assets/images/Weed manage/general.jpg",
     details: [
       Details(
         description:

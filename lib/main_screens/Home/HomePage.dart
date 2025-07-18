@@ -52,27 +52,36 @@ class _HomePageState extends State<HomePage> {
 
   final List<Map<String, String>> gridItems = [
     {
-      "title": "Market Price",
-      "image": "assets/images/Market Price/soybeans.png",
+      "title": "Manage Crops",
+      "image": "assets/images/Crop manage/crop-removebg-preview.png",
     },
-    {"title": "Insect", "image": "assets/images/Insect manage/insect.png"},
+    {
+      "title": "Manage Diseases",
+      "image": "assets/images/Disease manage/disease.png",
+    },
+    {
+      "title": "Manage Insects",
+      "image": "assets/images/Insect manage/insect.png",
+    },
+    {"title": "Manage Weeds", "image": "assets/images/Weed manage/weed.png"},
+    {"title": "Soy Food", "image": "assets/images/Soy Food/soyFood1.png"},
     {"title": "Smart Soy", "image": "assets/images/Smart Soy/Smart_Soy.png"},
-    {"title": "Soy Food", "image": "assets/images/Soy Food/soyFood.png"},
+    {"title": "Market Price", "image": "assets/images/Market Price/logo.png"},
+    {"title": "Seed", "image": "assets/images/Crop manage/soybeans.png"},
     {
       "title": "Fertilizers",
       "image": "assets/images/Crop manage/fertilizer.png",
     },
     {"title": "Soil", "image": "assets/images/Crop manage/soil.png"},
-    {"title": "Disease", "image": "assets/images/Disease manage/disease.png"},
-    {"title": "Weed", "image": "assets/images/Weed manage/weed.png"},
     {"title": "Water", "image": "assets/images/Crop manage/water.png"},
     {"title": "Harvesting", "image": "assets/images/Crop manage/harvest.png"},
   ];
-  
+
   final fertilizer = allCrops[6];
   final harvest = allCrops[2];
   final water = allCrops[8];
   final soil = allCrops[0];
+  final seed = allCrops[4];
 
   @override
   void initState() {
@@ -122,9 +131,9 @@ class _HomePageState extends State<HomePage> {
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white,
-              fontSize: 25,
+              fontSize: 26,
               fontWeight: FontWeight.w900,
-              fontFamily: "Gilroy Regular",
+              fontFamily: "Gilroy Heading",
             ),
           ),
         ),
@@ -178,8 +187,8 @@ class _HomePageState extends State<HomePage> {
                       style: TextStyle(
                         color: Color(0xFF156B34),
                         fontWeight: FontWeight.w700,
-                        fontFamily: "Gilroy Regular",
-                        fontSize: 21,
+                        fontFamily: "Gilroy Heading",
+                        fontSize: 23,
                       ),
                     ),
                   ),
@@ -290,25 +299,29 @@ class _HomePageState extends State<HomePage> {
                             MaterialPageRoute(
                               builder: (context) {
                                 if (index == 0)
-                                  return MarketPrice();
+                                  return CropManage();
                                 else if (index == 1)
-                                  return InsectPage();
-                                else if (index == 2)
-                                  return SmartSoy();
-                                else if (index == 3)
-                                  return SoyFood();
-                                else if (index == 4)
-                                  return CropDetailscreen(crop : fertilizer);
-                                else if (index == 5)
-                                  return CropDetailscreen(crop: soil);
-                                else if (index == 6)
                                   return DiseaseManage();
-                                else if (index == 7)
+                                else if (index == 2)
+                                  return InsectPage();
+                                else if (index == 3)
                                   return WeedManage();
+                                else if (index == 4)
+                                  return SoyFood();
+                                else if (index == 5)
+                                  return SmartSoy();
+                                else if (index == 6)
+                                  return MarketPrice();
+                                else if (index == 7)
+                                  return CropDetailscreen(crop: seed);
                                 else if (index == 8)
-                                  return CropDetailscreen(crop : water);
+                                  return CropDetailscreen(crop: fertilizer);
                                 else if (index == 9)
-                                  return CropDetailscreen(crop : harvest);
+                                  return CropDetailscreen(crop: soil);
+                                else if (index == 10)
+                                  return CropDetailscreen(crop: water);
+                                else if (index == 11)
+                                  return CropDetailscreen(crop: harvest);
                                 else
                                   return Placeholder();
                               },
@@ -333,7 +346,7 @@ class _HomePageState extends State<HomePage> {
                               ' Making Soybean \n Farming Better',
                               style: TextStyle(
                                 fontSize: 35,
-                                fontWeight: FontWeight.w600,
+                                fontWeight: FontWeight.w700,
                                 color: Colors.white,
                                 fontFamily: "Gilroy Regular",
                                 //height: 1.3
@@ -356,6 +369,23 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                           fontSize: 15,
                           fontFamily: "Gilroy Regular",
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xFF156B34),
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 70),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: TranslatedText(
+                        '~ by ICAR-IISR ',
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontFamily: "Gilroy Regular",
+                          fontWeight: FontWeight.w700,
                           color: Color(0xFF156B34),
                         ),
                         textAlign: TextAlign.left,
@@ -387,6 +417,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
-

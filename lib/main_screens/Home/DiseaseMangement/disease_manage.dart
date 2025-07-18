@@ -23,9 +23,9 @@ class _DiseaseManageState extends State<DiseaseManage> {
           "Disease Management",
           style: const TextStyle(
             color: Color(0xFF156B34),
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w900,
             fontFamily: "Gilroy Heading",
-            fontSize: 25,
+            fontSize: 26,
           ),
         ),
         backgroundColor: Color(0xFFE8F5E9),

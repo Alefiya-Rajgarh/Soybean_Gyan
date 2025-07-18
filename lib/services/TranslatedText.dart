@@ -6,6 +6,8 @@ class TranslatedText extends StatelessWidget {
   final String originalText;
   final TextStyle? style;
   final TextAlign? textAlign;
+  final TextOverflow? overflow;
+  final bool? softWrap;
   // final int? maxLines;
   // final TextOverflow? overflow;
 
@@ -14,8 +16,9 @@ class TranslatedText extends StatelessWidget {
         Key? key,
         this.style,
         this.textAlign,
+        this.overflow,
+        this.softWrap,
         // this.maxLines,
-        // this.overflow,
       }) : super(key: key);
 
   @override
@@ -28,8 +31,9 @@ class TranslatedText extends StatelessWidget {
         originalText,
         style: style,
         textAlign: textAlign,
+        softWrap: softWrap,
+        overflow: overflow,
         // maxLines: maxLines,
-        // overflow: overflow,
       );
     }
     // Otherwise, use FutureBuilder for translation

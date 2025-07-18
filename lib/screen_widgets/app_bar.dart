@@ -44,28 +44,27 @@ class _CustomAppBarState extends State<CustomAppBar> {
         icon: Icon(Icons.menu_rounded, color: Colors.black54, size: 30),
         onPressed: () => widget.scaffoldKey.currentState?.openDrawer(),
       ),
-      title: _isSearching
-          ? TextField(
-        controller: _searchController,
-        autofocus: true,
-        decoration: const InputDecoration(
-          hintText: "Search...",
-          border: InputBorder.none,
-        ),
-        style: const TextStyle(
-          color: Colors.black87,
-          fontSize: 18,
-        ),
-        onChanged: widget.onSearch,
-      )
-          :TranslatedText(widget.title,
-        style: const TextStyle(
-          color: Color(0xFF156B34),
-          fontWeight: FontWeight.w700,
-          fontFamily: "Gilroy Heading",
-          fontSize: 25,
-        ),
-      ),
+      title:
+          _isSearching
+              ? TextField(
+                controller: _searchController,
+                autofocus: true,
+                decoration: const InputDecoration(
+                  hintText: "Search...",
+                  border: InputBorder.none,
+                ),
+                style: const TextStyle(color: Colors.black87, fontSize: 18),
+                onChanged: widget.onSearch,
+              )
+              : TranslatedText(
+                widget.title,
+                style: const TextStyle(
+                  color: Color(0xFF156B34),
+                  fontWeight: FontWeight.w700,
+                  fontFamily: "Gilroy Heading",
+                  fontSize: 25,
+                ),
+              ),
       actions: [
         IconButton(
           icon: Icon(
