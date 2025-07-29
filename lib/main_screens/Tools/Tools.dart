@@ -45,7 +45,7 @@ class _ToolsState extends State<Tools> {
                     image: AssetImage(tools.image_path),
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
-                      Colors.black.withOpacity(0.3),
+                      Colors.black.withOpacity(0.5),
                       BlendMode.darken,
                     ),
                   ),
@@ -54,7 +54,7 @@ class _ToolsState extends State<Tools> {
                 child: TranslatedText(
                   tools.name,
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 28,
                     color: Colors.white,
                     fontWeight: FontWeight.w800,
                     fontFamily: "Gilroy Heading",

@@ -59,7 +59,7 @@ class _InsectPageState extends State<InsectPage> {
                     image: AssetImage(insect.image_path),
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
-                      Colors.black.withOpacity(0.3),
+                      Colors.black.withOpacity(0.4),
                       BlendMode.darken,
                     ),
                   ),
@@ -68,7 +68,7 @@ class _InsectPageState extends State<InsectPage> {
                 child: TranslatedText(
                   insect.name,
                   style: TextStyle(
-                    fontSize: 26,
+                    fontSize: 30,
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
                     fontFamily: "Gilroy Heading",

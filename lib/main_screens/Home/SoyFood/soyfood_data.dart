@@ -29,19 +29,19 @@ final List<Soyfood> allFoods = [
     name: "Soy Flour",
     recipe:
         "Soy flour can be processed by various methods: full-fatted, partially defatted, defatted, roasted, enzyme inactive or active, lecithinated, etc. Full-fatted soy flour can be prepared easily at home. For preparing at home, wash cleaned soybeans with water. Boil for 20 minutes and sundry for two to three days, then grind in a mixer or grinder. Add soy flour to wheat flour to prepare chapatti. For 9kg wheat flour, add 1kg soy flour for fortification.",
-    image_path: "assets/images/Soy Food/soy flour.jpg",
+    image_path: "assets/images/Soy Food/soy flour.png",
   ),
   Soyfood(
     name: "Soy Milk",
     recipe:
         "Soymilk is a hot water extract of soybeans.It can be handled and used in much the same way as dairy milk. Besides being rich in protein, vitamins, and minerals, soymilk is lactose-free, cholesterol-free, and low in saturated fat. To make 1 liter of soybean milk, you need 125 grams of soybeans. Wash the soybean seeds, boil them for 10-15 minutes, strain the water, and soak them for 3-4 hours in water. Strain the water from the soybean and rub the bean between your palms to peel them. Put the soybean in a mixer, add water, and make a paste by adding a little water into it. Pour 1 liter of hot water into the mixture and run the mixer again. Boil the milk while stirring with a spoon, let it come to a boil, and turn off the flame. Now sieve the boiled milk with a clean cloth. It is ready.",
-    image_path: "assets/images/Soy Food/soy milk.jpg",
+    image_path: "assets/images/Soy Food/soymilk.jpg",
   ),
   Soyfood(
     name: "Soy Nuts",
     recipe:
         "First, remove all extraneous matter to clean the soybeans, followed by washing and boiling for 10 minutes. Keep boiled soybeans aside for soaking (2-3 hours). Then drain all water and sun dry soaked beans for one hour. Fry or roast soybeans and use after mixing with spices, salt, and condiments.",
-    image_path: "assets/images/Soy Food/soy nuts.jpg",
+    image_path: "assets/images/Soy Food/soynuts.jpg",
   ),
   Soyfood(
     name: "Soy Halwa",

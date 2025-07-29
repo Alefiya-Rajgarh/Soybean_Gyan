@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'faqs.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -55,7 +56,12 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.question_answer),
             title: TranslatedText('FAQs'),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => faqs()),
+              );
+            },
           ),
           ListTile(
             leading: Icon(Icons.call),
@@ -75,7 +81,8 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.info),
             title: TranslatedText('About'),
-            onTap: () {},
+            onTap: () {
+            },
           ),
         ],
       ),

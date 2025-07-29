@@ -13,10 +13,10 @@ class MyButton extends StatelessWidget {
     return InkWell(
       onTap: onTab,
       child: Padding(
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(15),
         child: Container(
           alignment: Alignment.center,
-          padding: EdgeInsets.symmetric(vertical: 12),
+          padding: EdgeInsets.symmetric(vertical: 14),
           decoration: ShapeDecoration(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(15),
@@ -29,7 +29,7 @@ class MyButton extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.w900,
               fontFamily: "Gilroy Regular",
-              fontSize: screenWidth * 0.045,
+              fontSize: screenWidth * 0.049,
               color: Colors.white,
             ),
           ),

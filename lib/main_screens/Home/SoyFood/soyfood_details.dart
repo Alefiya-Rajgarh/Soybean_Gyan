@@ -109,7 +109,7 @@ class DetailSection extends StatelessWidget {
         TranslatedText(
           content,
           style: TextStyle(
-            fontSize: 20,
+            fontSize: 23,
             fontWeight: FontWeight.w600,
             color: Color(0xFF00796B),
           ),

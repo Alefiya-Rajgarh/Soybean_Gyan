@@ -26,11 +26,11 @@ class CropDetailscreen extends StatelessWidget {
           ),
           if (crop.details.isNotEmpty)
             SliverList(
-                delegate: SliverChildBuilderDelegate((context, index) {
-                  final item = crop.details[index];
-                  return DetailSection(item: item);
-                }, childCount: crop.details.length),
-              )
+              delegate: SliverChildBuilderDelegate((context, index) {
+                final item = crop.details[index];
+                return DetailSection(item: item);
+              }, childCount: crop.details.length),
+            )
           else
             SliverFillRemaining(
               hasScrollBody: false, // The child itself is not scrollable
@@ -138,8 +138,7 @@ class DetailSection extends StatelessWidget {
                 fontSize: 22,
                 fontWeight: FontWeight.w900,
                 fontFamily: "Gilroy Regular",
-                color:
-                  Color(0xFF00695C),
+                color: Color(0xFF00695C),
               ),
             ),
             const SizedBox(height: 8),
@@ -158,3 +157,5 @@ class DetailSection extends StatelessWidget {
     );
   }
 }
+
+

@@ -12,7 +12,7 @@ final List<LearnData> learnings = [
   ),
   LearnData(
     name: "Farmer Advisory",
-    image_path: "assets/images/sample image.jpg",
+    image_path: "assets/images/learn/advisory.png",
   ),
   LearnData(
     name: "Pre-disposing Factors",

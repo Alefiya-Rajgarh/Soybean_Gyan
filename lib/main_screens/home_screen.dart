@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soybean_gyan/screen_widgets/app_bar.dart';
 import 'package:soybean_gyan/screen_widgets/bottom_navbar.dart';
-import 'package:soybean_gyan/screen_widgets/drawer.dart';
+import 'package:soybean_gyan/screen_widgets/Drawer/drawer.dart';
 import 'Home/HomePage.dart';
 import 'Learn/Learn.dart';
 import 'Calendar/Calendar.dart';

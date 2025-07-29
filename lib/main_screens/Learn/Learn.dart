@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:soybean_gyan/main_screens/Learn/learn_data.dart';
 import 'learn_data.dart';
-//import 'tools_detail_section.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
+import 'pre.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'dart:async';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'goodAgri.dart';
 
 class Learn extends StatefulWidget {
   const Learn({super.key});
@@ -27,15 +30,30 @@ class _LearnState extends State<Learn> {
           padding: EdgeInsets.all(15),
           itemCount: learnings.length,
           itemBuilder: (context, index) {
-             final learn = learnings[index];
+            final learn = learnings[index];
             return InkWell(
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     //builder: (context) => ToolsDetailscreen(tools: tools),
-                //   ),
-                // );
+                if (index == 0) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => YouTubeLauncher()),
+                  );
+                } else if (index == 1) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => WebViewPage()),
+                  );
+                } else if (index == 2) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Predisposing()),
+                  );
+                } else {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => GoodAgriPracticesScreen()),
+                  );
+                }
               },
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 8),
@@ -55,7 +73,7 @@ class _LearnState extends State<Learn> {
                 child: TranslatedText(
                   learn.name,
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 32,
                     color: Colors.white,
                     fontWeight: FontWeight.w800,
                     fontFamily: "Gilroy Heading",
@@ -66,6 +84,122 @@ class _LearnState extends State<Learn> {
             );
           },
         ),
+      ),
+    );
+  }
+}
+
+class YouTubeLauncher extends StatelessWidget {
+  final String youtubeUrl =
+      "https://www.youtube.com/channel/UCNdY5AsfPZqsCO8IxkAuSyQ?view_as=subscriber";
+
+  Future<void> _launchYouTube() async {
+    Uri url = Uri.parse(youtubeUrl);
+
+    if (await canLaunchUrl(url)) {
+      await launchUrl(
+        url,
+        mode:
+            LaunchMode
+                .externalApplication, // Opens the URL in an external app or browser
+      );
+    } else {
+      throw "Could not launch $youtubeUrl";
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _launchYouTube();
+    });
+
+    return Scaffold(
+      appBar: AppBar(
+        title: TranslatedText(
+          "Launching YouTube",
+          style: const TextStyle(
+            color: Color(0xFF156B34),
+            fontWeight: FontWeight.w900,
+            fontFamily: "Gilroy Heading",
+            fontSize: 25,
+          ),
+        ),
+        backgroundColor: Color(0xFFE8F5E9),
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: Center(
+          child: TranslatedText(
+            "Opening YouTube Channel...",
+            style: TextStyle(fontSize: 18, color: Colors.black54),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class WebViewPage extends StatefulWidget {
+  @override
+  _WebViewPageState createState() => _WebViewPageState();
+}
+
+class _WebViewPageState extends State<WebViewPage> {
+  final Completer<InAppWebViewController> _controller = Completer<InAppWebViewController>();
+  bool _isLoading = true;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: TranslatedText("Advisory", style: const TextStyle(
+          color: Color(0xFF156B34),
+          fontWeight: FontWeight.w900,
+          fontFamily: "Gilroy Heading",
+          fontSize: 25,
+        ),
+        ),
+        backgroundColor: Color(0xFFE8F5E9),
+      ),
+      body: Container(
+    decoration: BoxDecoration(
+    gradient: LinearGradient(
+    colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    ),
+    ),
+    child: Stack(
+        children: [
+          InAppWebView(
+            initialUrlRequest: URLRequest(
+              url: WebUri.uri(Uri.parse("https://icar-nsri.res.in/Advisory.html")),
+            ),
+            onLoadStart: (InAppWebViewController controller, Uri? url) {
+              setState(() {
+                _isLoading = true;
+              });
+            },
+            onLoadStop: (InAppWebViewController controller, Uri? url) {
+              setState(() {
+                _isLoading = false;
+              });
+            },
+            onWebViewCreated: (InAppWebViewController controller) {
+              _controller.complete(controller);
+            },
+          ),
+          if (_isLoading)
+            Center(child: CircularProgressIndicator()),
+        ],
+    ),
       ),
     );
   }

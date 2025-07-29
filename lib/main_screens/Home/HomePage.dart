@@ -77,11 +77,11 @@ class _HomePageState extends State<HomePage> {
     {"title": "Harvesting", "image": "assets/images/Crop manage/harvest.png"},
   ];
 
-  final fertilizer = allCrops[6];
+  final fertilizer = allCrops[7];
   final harvest = allCrops[2];
-  final water = allCrops[8];
+  final water = allCrops[9];
   final soil = allCrops[0];
-  final seed = allCrops[4];
+  final seed = allCrops[5];
 
   @override
   void initState() {

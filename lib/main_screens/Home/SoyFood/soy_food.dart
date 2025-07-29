@@ -50,14 +50,14 @@ class _SoyFoodState extends State<SoyFood> {
               },
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 8),
-                height: 200,
+                height: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
                     image: AssetImage(soyfood.image_path),
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
-                      Colors.black.withOpacity(0.3),
+                      Colors.black.withOpacity(0.4),
                       BlendMode.darken,
                     ),
                   ),
@@ -66,7 +66,7 @@ class _SoyFoodState extends State<SoyFood> {
                 child: TranslatedText(
                   soyfood.name,
                   style: TextStyle(
-                    fontSize: 26,
+                    fontSize: 34,
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
                     fontFamily: "Gilroy Heading",

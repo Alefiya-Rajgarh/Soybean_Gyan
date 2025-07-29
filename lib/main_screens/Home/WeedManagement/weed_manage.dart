@@ -65,7 +65,7 @@ class _WeedManageState extends State<WeedManage> {
                     image: AssetImage(weed.image_path),
                     fit: BoxFit.cover,
                     colorFilter: ColorFilter.mode(
-                      Colors.black.withOpacity(0.3),
+                      Colors.black.withOpacity(0.4),
                       BlendMode.darken,
                     ),
                   ),
@@ -74,7 +74,7 @@ class _WeedManageState extends State<WeedManage> {
                 child: TranslatedText(
                   weed.title,
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 32,
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
                     fontFamily: "Gilroy Heading",

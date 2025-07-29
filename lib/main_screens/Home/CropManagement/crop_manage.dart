@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'crop_data.dart';
 import 'crop_details_screen.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
+import 'SelectionOfVarieties.dart';
 
 class CropManage extends StatefulWidget {
   const CropManage({super.key});
@@ -48,6 +49,22 @@ class _CropMangeState extends State<CropManage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => SowingTechniquesScreen(crop: crop),
+                    ),
+                  );
+                } else if (index == 3) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder:
+                          (context) => SelectionOfVarietiesPage(crop: crop),
+                    ),
+                  );
+                } else if (index == 8) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder:
+                          (context) => Intercropping(crop: crop),
                     ),
                   );
                 } else
@@ -132,15 +149,20 @@ class SowingTechniquesScreen extends StatelessWidget {
         ),
         child: Column(
           children: [
-            SizedBox(height: 4,),
-            Padding(
-              padding: const EdgeInsets.all(22.0),
-              child: TranslatedText("Looking to the prevailing climatic aberrations and erratic rainfall, following methods can be used to mitigate the adverse climate.", style: TextStyle(
-                color: Color(0xFF156B34),
-                fontWeight: FontWeight.w700,
-                fontFamily: "Gilroy Heading",
-                fontSize: 21,
-              ),),
+            SizedBox(height: 4),
+            SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(22.0),
+                child: TranslatedText(
+                  "Looking to the prevailing climatic aberrations and erratic rainfall, following methods can be used to mitigate the adverse climate.",
+                  style: TextStyle(
+                    color: Color(0xFF156B34),
+                    fontWeight: FontWeight.w700,
+                    fontFamily: "Gilroy Heading",
+                    fontSize: 21,
+                  ),
+                ),
+              ),
             ),
             Expanded(
               child: ListView.builder(
@@ -190,21 +212,24 @@ class SowingTechniquesScreen extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Flexible(
-                  child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
-                            child: TranslatedText(
-                              des.description!,
-                              style: TextStyle(
-                                color: Color(0xFF156B34),
-                                fontWeight: FontWeight.w700,
-                                fontFamily: "Gilroy Heading",
-                                fontSize: 22,
+                            child: Padding(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12.0,
+                                vertical: 6.0,
                               ),
-                              textAlign: TextAlign.center,
-                              softWrap: true,
-                              overflow: TextOverflow.visible,
+                              child: TranslatedText(
+                                des.description!,
+                                style: TextStyle(
+                                  color: Color(0xFF156B34),
+                                  fontWeight: FontWeight.w700,
+                                  fontFamily: "Gilroy Heading",
+                                  fontSize: 22,
+                                ),
+                                textAlign: TextAlign.center,
+                                softWrap: true,
+                                overflow: TextOverflow.visible,
+                              ),
                             ),
-                  ),
                           ),
                         ),
                       ],
@@ -212,6 +237,134 @@ class SowingTechniquesScreen extends StatelessWidget {
                   );
                 },
               ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class Intercropping extends StatelessWidget {
+  final Crop crop;
+  const Intercropping({super.key, required this.crop});
+
+  @override
+  Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+    return Scaffold(
+      appBar: AppBar(
+        title: TranslatedText(
+          crop.name,
+          style: const TextStyle(
+            color: Color(0xFF156B34),
+            fontWeight: FontWeight.w900,
+            fontFamily: "Gilroy Heading",
+            fontSize: 25,
+          ),
+        ),
+        backgroundColor: Color(0xFFE8F5E9),
+      ),
+      backgroundColor: Colors.green.shade50,
+      body: SingleChildScrollView(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ...crop.details
+                .map(
+                  (info) => Container(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          Colors.white,
+                          Colors.green.shade50,
+                          Colors.green.shade100,
+                        ],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.3),
+                          blurRadius: 5,
+                          offset: Offset(2, 4),
+                        ),
+                      ],
+                    ),
+                    margin: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 6,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          TranslatedText(
+                            info.title,
+                            style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w900,
+                              fontFamily: "Gilroy Regular",
+                              color: Color(0xFF00695C),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          TranslatedText(
+                            info.description,
+                            style: TextStyle(
+                              fontSize: 19,
+                              fontWeight: FontWeight.w600,
+                              fontFamily: "Gilroy Regular",
+                              color: Color(0xFF00796B),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                )
+                .toList(),
+            SizedBox(height: screenHeight * 0.016),
+
+            ExpansionTile(
+              title: TranslatedText(
+                "Table of Remunerative cropping systems for different zones ",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Gilroy Regular",
+                  color: Color(0xFF00695C),
+                ),
+                textAlign: TextAlign.left,
+              ),
+              children: [
+                Image.asset(
+                  'assets/images/Crop manage/intertable.png',
+                  width: 700,
+                ),
+              ],
+            ),
+            ExpansionTile(
+              title: TranslatedText(
+                "Images of Soybean based intrercropping systms popular in India ",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Gilroy Regular",
+                  color: Color(0xFF00695C),
+                ),
+                textAlign: TextAlign.left,
+              ),
+              children: [
+                Image.asset(
+                  'assets/images/Crop manage/interimage.png',
+                  width: 700,
+                ),
+              ],
             ),
           ],
         ),

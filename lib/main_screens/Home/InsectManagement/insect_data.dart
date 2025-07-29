@@ -124,7 +124,7 @@ final List<Insect> allInsects = [
     name: "Tobacco Caterpillar",
     title: "Tobacco Caterpillar [Spodoptera litura (Fabricius)]",
     identification: "Adult moths possess golden brown forewings with white lines..",
-    damage: "Newly hatched larvae feed gregariously on the chlorophyll content...",
+    damage: "Newly hatched larvae feed gregariously on the  chlorophyll content of the leaves. Infested plants can be easily spotted in the field. Later on larvae disperse on neighboring plants and damage the leaves by cutting big holes. This pest have developed resistance to many popular insecticides.",
     management: "Generally, the larvae of tobacco caterpillar can be found in abundant numbers..",
     image_path: 'assets/images/Insect manage/tabacco caterpillar.png',
   ),

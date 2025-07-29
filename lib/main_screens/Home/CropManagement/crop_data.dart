@@ -141,12 +141,12 @@ final List<Crop> allCrops = [
       DetailItem(
         title: "Info 4:",
         description:
-            "Farmers are advised to select 3-4 varieties popular among their zone and ensure the availability of seed of these varieties well in advance. They should also check the germination percentage of seed a fortnight prior to sowing so as to have optimum plant population.",
+        "Farmers are advised to check the germination percentage and perform other preparatory tasks to ensure optimal results during the sowing season.",
       ),
       DetailItem(
-        title: "Info 5:",
+        title: "Zone-wise recommended varieties",
         description:
-            "Farmers are advised to check the germination percentage and perform other preparatory tasks to ensure optimal results during the sowing season.",
+            "Farmers are advised to select 3-4 varieties popular among their zone and ensure the availability of seed of these varieties well in advance.i.e. before sowing. The zone-wise list of recommended and notified soybean varieties suitable for different zone is given in Table",
       ),
     ],
   ),
@@ -187,7 +187,7 @@ final List<Crop> allCrops = [
       DetailItem(
         title: "Info 3:",
         description:
-            "In areas where Yellow Mosaic Virus is infecting the soybean crop every year, farmers are recommended to carry out seed treatment with Thiamethoxam 30 FS (10 ml/kg of seed).",
+            "In areas where Yellow Mosaic Virus is infecting the soybean crop every year, farmers are recommended to carry out seed treatment with  recommended insecticide i.e. Thiamethoxam 30 FS @10 ml/kg of seed or Imidacloprid 48 FS@ 1.25 ml/kg seed.",
       ),
       DetailItem(
         title: "Info 4:",
@@ -197,7 +197,7 @@ final List<Crop> allCrops = [
       DetailItem(
         title: "Info 5:",
         description:
-            "If the soybean is grown in nontraditional/new area, they should increase the quantity to at least 10 g/kg seed.",
+            "If the soybean is grown in nontraditional/new area, they should increase the  quantity of bio-inoculants to at least 10-15 g/kg seed.",
       ),
       DetailItem(
         title: "Info 6:",
@@ -250,6 +250,8 @@ final List<Crop> allCrops = [
         description:
             "If farmers have not used PPI herbicide (PPI) herbicides, they are advised to use the recommended pre-emergence herbicide immediately after sowing and before the emergence of soybean.",
       ),
+      DetailItem(title: "Zone-wise optimum sowing time, seed rate and row spacing for soybean", description: "Soybean sowing practices vary slightly across different agro-climatic zones in India. In the North Eastern Hill Zone and the Eastern Zone, the recommended sowing period is from 15th June to 30th June, with a seed rate of 55 kg/ha and a spacing of 45 cm. For the North Plain Zone and Central Zone, sowing is ideally done between 20th June and 5th July, using a higher seed rate of 65 kg/ha and the same spacing of 45 cm. Meanwhile, in the Southern Zone, sowing is also suggested from 15th June to 30th June, but with a seed rate of 65 kg/ha and a reduced spacing of 30 cm, suitable for the regional conditions."),
+      DetailItem(title: "Zone-wise optimum sowing time, seed rate and row spacing for soybean", description: "Zone:  North Eastern Hill, Sowing time: 15th June - 30th June\n Zone:  North Plain , Sowing time: 20th June - 5th July\n Zone:Eastern, Sowing time: 15th June - 30th June\n Zone:  Central , Sowing time: 20th June-5th July\n Zone:  Souther, Sowing time: 15th June-30th Jun\n ")
     ],
   ),
   Crop(
@@ -264,7 +266,7 @@ final List<Crop> allCrops = [
       DetailItem(
         title: "Soybean Manure:",
         description:
-            "Soybean is considered to be moderately exhaustive crop. Balanced nutrients application ensures better yield performance of soybean. The integration of 5-10 t Farm Yard Manure or 2.5 t poultry manure/ha along with the basal application of N:P205:K20:S generally provides balanced nutrition for harnessing the yield potential of soybean.",
+            "Soybean is considered to be moderately exhaustive crop. Balanced nutrients application ensures better yield performance of soybean.The integration of Farm Yard Manure (5-10 t/ha) or Compost (5 t/ha) or poultry manure (2.5 t/ha) along with the basal application of Nitrogen, Phosphorus, Potash and Sulphur generally provides balanced nutrition for harnessing the yield potential of soybean.",
       ),
       DetailItem(
         title: "Fertilizer Use:",
@@ -276,6 +278,7 @@ final List<Crop> allCrops = [
         description:
             "Farmers are also advised not to mix fertilizers along with seed during sowing of soybean. In close contact with fertilizer it gets rotten in the soil. They should ensure the placement of seed at 3 cm and the fertilizer placement at 5 cm in the soil. The top dressing of fertilizer in soybean is generally avoided or to be used in consultation with soybean scientists.",
       ),
+      DetailItem(title: "info", description: " The farmers of central zone can use any one of the below combination of fertilizers sources in order to meet the nutritional requirement (25:100:50:50 kg NPKS/ha) as given below: \n1. 56 kg Urea+625 kg SSP+ 84 kg MoP  per hectare or\n2. 125 kg DAP+67 kg MOP+25 kg Bentonite Sulphur  per hectare or\n3. 200 kg 12:32:16+ 25 kg Bentonite Sulphur  per hectare")
     ],
   ),
   Crop(
@@ -285,17 +288,17 @@ final List<Crop> allCrops = [
       DetailItem(
         title: "Description 1:",
         description:
-            "Soybean is grown throughout the country as a rainfed crop during June/July-October...",
+            "Soybean is grown throughout the country as a rainfed crop during June/July-October.It is also successfully grown as intercrop (4:2 or 2:2 combination) with cotton, maize etc. and also in sugarcane and other horticultural crops. Soybean +pigeon pea in 4: 2 combinations are most popular inter-cropping system under rainfed condition in Maharashtra including Vidarbha region.",
       ),
       DetailItem(
         title: "Description 2:",
         description:
-            "Intercropping of soybean with suitable companion crops is found to be remunerative...",
+            "Intercropping of soybean with suitable companion crops is found to be remunerative compared to sole cropping. In rainfed areas where only one crop is possible, it is recommended that soybean should be inter-cropped with pigeon pea. Similarly, under irrigated situations, it can be inter-cropped with maize, sorghum, cotton, pearl millet, finger millet so that it does not interfere with the next rabi crop. Soybean can also be successfully planted on the bunds of paddy fields for additional income",
       ),
       DetailItem(
         title: "Description 3:",
         description:
-            "When intercropped, the sowing can be done at 30 cm row to row spacing...",
+            " When inter-cropped, the sowing can be done at 30 cm row to row spacing in 4:2 (soybean + pigeon pea/ maize/ sorghum/ cotton) row ratio. Farmers can also grow soybean at space available in different orchards like mango, jackfruit, guava, and papaya during initial years. ",
       ),
     ],
   ),
@@ -313,6 +316,7 @@ final List<Crop> allCrops = [
         description:
             "As explained earlier, seedling, flowering and pod formation are the critical growth stages of soybean. Hence, during any of these stages, life saving irrigation should be given to soybean in case of long dry spells.",
       ),
+      DetailItem(title: "Description 3", description: "The ICAR-IISR has developed machines like The BBF Seed Drill and FIRB seed drill, Sub-soiler etc and are found useful to realize yield levels in such climatic adversities. Farmers are advised to sow the crop using BBF/Ridge Furrowmethods facilitating dual advantage of moisture conservation beside serving as irrigation chanel in case of drought")
     ],
   ),
 ];
