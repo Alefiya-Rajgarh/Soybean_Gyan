@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'faqs.dart';
+import 'drawerFiles.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -66,7 +66,12 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.call),
             title: TranslatedText('Contact Us'),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Contact()),
+              );
+            },
           ),
           ListTile(
             leading: Icon(Icons.share),
@@ -82,6 +87,10 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.info),
             title: TranslatedText('About'),
             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Aboutus()),
+              );
             },
           ),
         ],
