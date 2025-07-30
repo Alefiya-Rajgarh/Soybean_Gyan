@@ -27,7 +27,7 @@ class GoodAgriPracticesScreen extends StatelessWidget {
               colors: [
                 Colors.white,
                 Colors.green.shade50,
-                Colors.green.shade100,
+                Colors.green.shade50,
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,

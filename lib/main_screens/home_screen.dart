@@ -4,7 +4,7 @@ import 'package:soybean_gyan/screen_widgets/bottom_navbar.dart';
 import 'package:soybean_gyan/screen_widgets/Drawer/drawer.dart';
 import 'Home/HomePage.dart';
 import 'Learn/Learn.dart';
-import 'Calendar/Calendar.dart';
+import 'Calendar/WeatherCalendar.dart';
 import 'Tools/Tools.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
 import 'package:soybean_gyan/services/LanguageProvider.dart';
@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
   final List<Widget> pages = [
     HomePage(),
     const Learn(),
-    const Calendar(),
+     WeatherCalendarScreen(),
     const Tools(),
   ];
 

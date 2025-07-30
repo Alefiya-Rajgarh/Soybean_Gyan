@@ -94,6 +94,10 @@ flutter_launcher_icons
 3.0
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_launcher_icons-0.14.3/
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_launcher_icons-0.14.3/lib/
+flutter_spinkit
+2.12
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_spinkit-5.2.1/
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_spinkit-5.2.1/lib/
 http
 3.4
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.4.0/
@@ -194,6 +198,10 @@ shared_preferences_windows
 3.3
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_windows-2.4.1/
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_windows-2.4.1/lib/
+simple_gesture_detector
+2.12
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/simple_gesture_detector-0.2.1/
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/simple_gesture_detector-0.2.1/lib/
 smooth_page_indicator
 2.12
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/smooth_page_indicator-1.2.1/
@@ -206,6 +214,10 @@ string_scanner
 3.1
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/lib/
+table_calendar
+3.0
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/table_calendar-3.2.0/
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/table_calendar-3.2.0/lib/
 term_glyph
 3.1
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.2/
@@ -250,6 +262,10 @@ vector_math
 2.14
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/lib/
+weather_icons
+2.12
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/weather_icons-3.0.0/
+file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/weather_icons-3.0.0/lib/
 web
 3.4
 file:///C:/Users/alefi/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1/
