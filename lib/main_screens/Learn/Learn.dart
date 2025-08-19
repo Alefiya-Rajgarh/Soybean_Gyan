@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'dart:async';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'goodAgri.dart';
+import 'imp_info.dart';
 
 class Learn extends StatefulWidget {
   const Learn({super.key});
@@ -46,18 +47,25 @@ class _LearnState extends State<Learn> {
                 } else if (index == 2) {
                   Navigator.push(
                     context,
+                    MaterialPageRoute(builder: (context) => ImpInfo()),
+                  );
+                } else if (index == 3) {
+                  Navigator.push(
+                    context,
                     MaterialPageRoute(builder: (context) => Predisposing()),
                   );
                 } else {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => GoodAgriPracticesScreen()),
+                    MaterialPageRoute(
+                      builder: (context) => GoodAgriPracticesScreen(),
+                    ),
                   );
                 }
               },
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 8),
-                height: 250,
+                height: 150,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
@@ -152,54 +160,58 @@ class WebViewPage extends StatefulWidget {
 }
 
 class _WebViewPageState extends State<WebViewPage> {
-  final Completer<InAppWebViewController> _controller = Completer<InAppWebViewController>();
+  final Completer<InAppWebViewController> _controller =
+      Completer<InAppWebViewController>();
   bool _isLoading = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: TranslatedText("Advisory", style: const TextStyle(
-          color: Color(0xFF156B34),
-          fontWeight: FontWeight.w900,
-          fontFamily: "Gilroy Heading",
-          fontSize: 25,
-        ),
+        title: TranslatedText(
+          "Advisory",
+          style: const TextStyle(
+            color: Color(0xFF156B34),
+            fontWeight: FontWeight.w900,
+            fontFamily: "Gilroy Heading",
+            fontSize: 25,
+          ),
         ),
         backgroundColor: Color(0xFFE8F5E9),
       ),
       body: Container(
-    decoration: BoxDecoration(
-    gradient: LinearGradient(
-    colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    ),
-    ),
-    child: Stack(
-        children: [
-          InAppWebView(
-            initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse("https://icar-nsri.res.in/Advisory.html")),
-            ),
-            onLoadStart: (InAppWebViewController controller, Uri? url) {
-              setState(() {
-                _isLoading = true;
-              });
-            },
-            onLoadStop: (InAppWebViewController controller, Uri? url) {
-              setState(() {
-                _isLoading = false;
-              });
-            },
-            onWebViewCreated: (InAppWebViewController controller) {
-              _controller.complete(controller);
-            },
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
-          if (_isLoading)
-            Center(child: CircularProgressIndicator()),
-        ],
-    ),
+        ),
+        child: Stack(
+          children: [
+            InAppWebView(
+              initialUrlRequest: URLRequest(
+                url: WebUri.uri(
+                  Uri.parse("https://icar-nsri.res.in/Advisory.html"),
+                ),
+              ),
+              onLoadStart: (InAppWebViewController controller, Uri? url) {
+                setState(() {
+                  _isLoading = true;
+                });
+              },
+              onLoadStop: (InAppWebViewController controller, Uri? url) {
+                setState(() {
+                  _isLoading = false;
+                });
+              },
+              onWebViewCreated: (InAppWebViewController controller) {
+                _controller.complete(controller);
+              },
+            ),
+            if (_isLoading) Center(child: CircularProgressIndicator()),
+          ],
+        ),
       ),
     );
   }

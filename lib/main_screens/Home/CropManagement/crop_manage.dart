@@ -77,7 +77,7 @@ class _CropMangeState extends State<CropManage> {
               },
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 8),
-                height: 250,
+                height: 100,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
@@ -93,7 +93,7 @@ class _CropMangeState extends State<CropManage> {
                 child: TranslatedText(
                   crop.name,
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 23,
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
                     fontFamily: "Gilroy Heading",

@@ -144,7 +144,7 @@ final List<Crop> allCrops = [
         "Farmers are advised to check the germination percentage and perform other preparatory tasks to ensure optimal results during the sowing season.",
       ),
       DetailItem(
-        title: "Zone-wise recommended varieties",
+        title: "",
         description:
             "Farmers are advised to select 3-4 varieties popular among their zone and ensure the availability of seed of these varieties well in advance.i.e. before sowing. The zone-wise list of recommended and notified soybean varieties suitable for different zone is given in Table",
       ),

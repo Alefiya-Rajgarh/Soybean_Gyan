@@ -58,7 +58,7 @@ class _WeedManageState extends State<WeedManage> {
               },
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 8),
-                height: 250,
+                height: 200,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
