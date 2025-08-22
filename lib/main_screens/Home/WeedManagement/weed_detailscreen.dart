@@ -141,6 +141,7 @@ class DetailSection extends StatelessWidget {
                   fontFamily: "Gilroy Regular",
                   color: Color(0xFF00796B),
                 ),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(height: 20,)
             ],

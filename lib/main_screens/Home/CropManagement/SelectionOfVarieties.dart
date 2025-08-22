@@ -133,6 +133,7 @@ class SelectionOfVarietiesPage extends StatelessWidget {
                               fontFamily: "Gilroy Regular",
                               color: Color(0xFF00796B),
                             ),
+                            textAlign: TextAlign.justify,
                           ),
                         ],
                       ),

@@ -264,6 +264,7 @@ class DetailSection extends StatelessWidget {
             fontWeight: FontWeight.w600,
             color: Color(0xFF00796B),
           ),
+          textAlign: TextAlign.justify,
         ),
       ),
     ),

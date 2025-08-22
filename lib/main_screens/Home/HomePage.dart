@@ -53,18 +53,18 @@ class _HomePageState extends State<HomePage> {
 
   final List<Map<String, String>> gridItems = [
     {
-      "title": "Manage Crops",
+      "title": "Crop Management",
       "image": "assets/images/Crop manage/crop-removebg-preview.png",
     },
     {
-      "title": "Manage Diseases",
+      "title": "Disease Management",
       "image": "assets/images/Disease manage/disease.png",
     },
     {
-      "title": "Manage Insects",
+      "title": "Insect Managemen",
       "image": "assets/images/Insect manage/insect.png",
     },
-    {"title": "Manage Weeds", "image": "assets/images/Weed manage/weed.png"},
+    {"title": "Weed Management", "image": "assets/images/Weed manage/weed.png"},
     {"title": "Soy Food", "image": "assets/images/Soy Food/soyFood1.png"},
     {"title": "Smart Soy", "image": "assets/images/Smart Soy/Smart_Soy.png"},
     {"title": "Market Price", "image": "assets/images/Market Price/logo.png"},
@@ -281,80 +281,75 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: screenHeight * 0.015),
-                  GridView.builder(
-                    shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    itemCount: gridItems.length,
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      childAspectRatio: 0.9,
+                  SizedBox(
+                    child: GridView.builder(
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemCount: gridItems.length,
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        childAspectRatio: 0.9,
+                      ),
+                      itemBuilder: (context, index) {
+                        return buildGridItem(
+                          gridItems[index]['title']!,
+                          gridItems[index]['image']!,
+                          () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  if (index == 0)
+                                    return CropManage();
+                                  else if (index == 1)
+                                    return DiseaseManage();
+                                  else if (index == 2)
+                                    return InsectPage();
+                                  else if (index == 3)
+                                    return WeedManage();
+                                  else if (index == 4)
+                                    return SoyFood();
+                                  else if (index == 5)
+                                    return SmartSoy();
+                                  else if (index == 6)
+                                    return MarketPrice();
+                                  else if (index == 7)
+                                    return CropDetailscreen(crop: seed);
+                                  else if (index == 8)
+                                    return CropDetailscreen(crop: fertilizer);
+                                  else if (index == 9)
+                                    return CropDetailscreen(crop: soil);
+                                  else if (index == 10)
+                                    return CropDetailscreen(crop: water);
+                                  else if (index == 11)
+                                    return CropDetailscreen(crop: harvest);
+                                  else
+                                    return Placeholder();
+                                },
+                              ),
+                            );
+                          },
+                        );
+                      },
                     ),
-                    itemBuilder: (context, index) {
-                      return buildGridItem(
-                        gridItems[index]['title']!,
-                        gridItems[index]['image']!,
-                        () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) {
-                                if (index == 0)
-                                  return CropManage();
-                                else if (index == 1)
-                                  return DiseaseManage();
-                                else if (index == 2)
-                                  return InsectPage();
-                                else if (index == 3)
-                                  return WeedManage();
-                                else if (index == 4)
-                                  return SoyFood();
-                                else if (index == 5)
-                                  return SmartSoy();
-                                else if (index == 6)
-                                  return MarketPrice();
-                                else if (index == 7)
-                                  return CropDetailscreen(crop: seed);
-                                else if (index == 8)
-                                  return CropDetailscreen(crop: fertilizer);
-                                else if (index == 9)
-                                  return CropDetailscreen(crop: soil);
-                                else if (index == 10)
-                                  return CropDetailscreen(crop: water);
-                                else if (index == 11)
-                                  return CropDetailscreen(crop: harvest);
-                                else
-                                  return Placeholder();
-                              },
-                            ),
-                          );
-                        },
-                      );
-                    },
                   ),
                   SizedBox(height: screenHeight * 0.05),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 60),
                     child: Align(
                       alignment: Alignment.centerLeft,
-                      child: Flexible(
-                        flex: 2,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 1),
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: TranslatedText(
-                              ' Making Soybean \n Farming Better',
-                              style: TextStyle(
-                                fontSize: 35,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
-                                fontFamily: "Gilroy Regular",
-                                //height: 1.3
-                              ),
-                              textAlign: TextAlign.left,
-                            ),
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: TranslatedText(
+                          ' Making Soybean \n Farming Better',
+                          style: TextStyle(
+                            fontSize: 35,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white,
+                            fontFamily: "Gilroy Regular",
                           ),
+                          textAlign: TextAlign.left,
                         ),
                       ),
                     ),
@@ -366,7 +361,7 @@ class _HomePageState extends State<HomePage> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: TranslatedText(
-                        'Crafted with love 💚',
+                        'Based on Expert Knowledge 💚',
                         style: TextStyle(
                           fontSize: 15,
                           fontFamily: "Gilroy Regular",
@@ -382,7 +377,7 @@ class _HomePageState extends State<HomePage> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: TranslatedText(
-                        '~ by ICAR-IISR ',
+                        '~ by ICAR-NSRI ',
                         style: TextStyle(
                           fontSize: 13,
                           fontFamily: "Gilroy Regular",
@@ -438,11 +433,13 @@ class _ChatbotPageState extends State<ChatbotPage> {
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.white),
-        title: const Text ('Soychatbot',style: TextStyle(color: Colors.white), ),
+        title: const Text('Soychatbot', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.green,
       ),
       body: InAppWebView(
-        initialUrlRequest: URLRequest(url: WebUri(_url)), // Use WebUri instead of Uri
+        initialUrlRequest: URLRequest(
+          url: WebUri(_url),
+        ), // Use WebUri instead of Uri
         onWebViewCreated: (InAppWebViewController controller) {
           setState(() {
             // Assign the controller to a variable if needed

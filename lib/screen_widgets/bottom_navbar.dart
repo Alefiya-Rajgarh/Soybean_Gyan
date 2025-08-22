@@ -22,7 +22,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   // Could also be passed as a parameter if dynamic
   static const List<Map<String, dynamic>> _navBarItemsData = [
     {'key': 'home', 'icon': Icons.home_outlined, 'selectedIcon': Icons.home, 'originalLabel': 'Home'},
-    {'key': 'learn', 'icon': Icons.menu_book_outlined, 'selectedIcon': Icons.menu_book, 'originalLabel': 'Learn'},
+    {'key': 'Knowledge', 'icon': Icons.menu_book_outlined, 'selectedIcon': Icons.menu_book, 'originalLabel': 'Knowledge'},
     {'key': 'calendar', 'icon': Icons.calendar_today_outlined, 'selectedIcon': Icons.calendar_today, 'originalLabel': 'Calendar'},
     {'key': 'tools', 'icon': Icons.build_outlined, 'selectedIcon': Icons.build, 'originalLabel': 'Tools'},
   ];

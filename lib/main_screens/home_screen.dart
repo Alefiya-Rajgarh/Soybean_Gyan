@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
     });
   }
 
-  final List<String> titles = ['Soybean Gyan', 'Learn', 'Calendar', 'Tools'];
+  final List<String> titles = ['Soybean Gyan', 'Knowledge Corner', 'Calendar', 'Tools'];
 
   final List<Widget> pages = [
     HomePage(),

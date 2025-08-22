@@ -10,7 +10,7 @@ class ImpInfo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: TranslatedText(
-          "Important Information",
+          "Recommended Technologies",
           style: const TextStyle(
             color: Color(0xFF156B34),
             fontWeight: FontWeight.w900,

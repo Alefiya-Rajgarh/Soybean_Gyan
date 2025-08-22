@@ -14,7 +14,7 @@ final List<LearnData> learnings = [
     name: "Farmer Advisory",
     image_path: "assets/images/learn/advisory.png",
   ),
-  LearnData(name: "Important Information", image_path: "assets/images/learn/imp info.png"
+  LearnData(name: "Recommended Technologies", image_path: "assets/images/learn/imp info.png"
   ),
   LearnData(
     name: "Pre-disposing Factors",
