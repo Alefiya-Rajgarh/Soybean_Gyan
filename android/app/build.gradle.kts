@@ -25,20 +25,29 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 21
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 9
         versionName = "2.3"
     }
 
-    buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            isMinifyEnabled = false
-            isShrinkResources = false
-            signingConfig = signingConfigs.getByName("debug")
+    signingConfigs {
+        create("release") {
+            keyAlias = "soybean_new"  // Alias for the key
+            keyPassword = "123456"  // Replace with your actual key password
+            storeFile = file("../soybean.jks")  // Path to the keystore
+            storePassword = "123456"
         }
     }
+    buildTypes {
+        getByName("release") {
+            signingConfig = signingConfigs.getByName("release")
+            isMinifyEnabled = false // Enable code shrinking and obfuscation
+            isShrinkResources = false
+            proguardFiles (
+                getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro" )
+        }
+    }
+
 }
 
 flutter {

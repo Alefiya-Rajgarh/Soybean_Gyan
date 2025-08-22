@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:soybean_gyan/services/TranslatedText.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'drawerFiles.dart';
+import 'package:share_plus/share_plus.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -50,7 +51,7 @@ class CustomDrawer extends StatelessWidget {
             leading: Icon(Icons.agriculture),
             title: TranslatedText('Farmer Problems & Solutions'),
             onTap: () {
-              _launchUrl("https://services.india.gov.in/service/search?kw=problem&ln=en&cat_id_search=&location=district&state_id=&district_name=&pin_code=");
+              _launchUrl("https://icar-nsri.res.in/");
             },
           ),
           ListTile(
@@ -76,12 +77,20 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.share),
             title: TranslatedText('Share App'),
-            onTap: () {},
+            onTap: () {
+              Navigator.pop(context); // close drawer first
+              Share.share(
+                "Hey! Check out this awesome app: https://play.google.com/store/apps/details?id=com.soybean_gyan&pcampaignid=web_share",
+                subject: "Try this app!",
+              );
+            },
           ),
           ListTile(
             leading: Icon(Icons.star_rate),
             title: TranslatedText('Rate Us'),
-            onTap: () {},
+            onTap: () {
+              _launchUrl("https://play.google.com/store/apps/details?id=com.soybean_gyan&pcampaignid=web_share");
+            },
           ),
           ListTile(
             leading: Icon(Icons.info),

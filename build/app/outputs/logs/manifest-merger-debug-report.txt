@@ -2,6 +2,8 @@
 application
 INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\main\AndroidManifest.xml:4:5-37:19
 INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\AndroidManifest.xml
+MERGED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-33:19
+MERGED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-33:19
 MERGED from [:flutter_inappwebview_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\flutter_inappwebview_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:5-46:19
 MERGED from [:flutter_inappwebview_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\flutter_inappwebview_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:5-46:19
 MERGED from [:url_launcher_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-12:19
@@ -10,10 +12,10 @@ MERGED from [androidx.window:window:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\
 MERGED from [androidx.window:window:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\970764a81dd610c772147726baa7dca5\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3c939391c922c9154d8d45d84cfbf3d2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3c939391c922c9154d8d45d84cfbf3d2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\eabc1325411a824ae74b9b450245750e\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\eabc1325411a824ae74b9b450245750e\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\77d6589d54f70503af1ad7bd5c95eb07\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
@@ -33,12 +35,14 @@ INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\A
 INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 MERGED from [:shared_preferences_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\shared_preferences_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+MERGED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-35:12
 MERGED from [:flutter_inappwebview_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\flutter_inappwebview_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.preference:preference:1.2.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0aea3dee6044b352a54f8fb9c4a12c07\transformed\preference-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\d9b2073afa2310ef070241e5dd43f861\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\ec2446b685f1ce495c317fa8a66def86\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [:url_launcher_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-14:12
 MERGED from [:connectivity_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\connectivity_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.webkit:webkit:1.12.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\1bf901f7cccf68f385f199a96336a0e3\transformed\webkit-1.12.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.browser:browser:1.8.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\5683f3a75f4aae74864d56d25d09ab49\transformed\browser-1.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b2df645d79e711076ea45b6a8385e99c\transformed\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -56,6 +60,14 @@ MERGED from [androidx.activity:activity-ktx:1.8.1] C:\Users\alefi\.gradle\caches
 MERGED from [androidx.activity:activity:1.8.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7849ccecc13e92bd92ae7e14119101a3\transformed\jetified-activity-1.8.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\4c4a6ad3f7b10ac103c0346368799501\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\cf593104563b66144c3b6dc7fc4802c1\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e71467fe7caeb25f99b2fabbeba6edee\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0fa1677c034ef049b8c12b4202dcc8c4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\2111a692760d2213c419f21507346c83\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b6435e177046c519b4e9a09d53555b3f\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\348e9995eb75a687bf31011ee5dfb249\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3e9c3e49153aa47f3a49791ab647f926\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7295a6e9f96a0daeed321ae2faac1f7b\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3ff6adcf87eb4959e12e2c03b49ab87a\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7c8820905eb370fbd3bb42d26ba8ae5a\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\645c56368631721d8b7755f7e8a726a8\transformed\jetified-lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
@@ -68,24 +80,16 @@ MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\alefi\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3406eb4cffe3e53bb6d20996e0b4ec87\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\834fbfef458f2f76792d20bc77011687\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\538273fdc918a79c3b54859282434b2c\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e71467fe7caeb25f99b2fabbeba6edee\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0fa1677c034ef049b8c12b4202dcc8c4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\2111a692760d2213c419f21507346c83\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b6435e177046c519b4e9a09d53555b3f\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\348e9995eb75a687bf31011ee5dfb249\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.4.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3e9c3e49153aa47f3a49791ab647f926\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7295a6e9f96a0daeed321ae2faac1f7b\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\99ae6e67fc3e457914a47c035e30c12a\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.datastore:datastore-core-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\decb1acca50446f7d04f9c3baaa30a43\transformed\jetified-datastore-core-release\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\d4ce3ca3f2edcf65c5795f97027f83c4\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.datastore:datastore-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b71b52b2a70c6b10140d87dce8249e38\transformed\jetified-datastore-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\eabc1325411a824ae74b9b450245750e\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\77d6589d54f70503af1ad7bd5c95eb07\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\67e6cf8dd6496a1e1ab42bfbc69e3371\transformed\jetified-tracing-1.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\ae03ddb689964a197cc9572a48c09923\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7620a15c947fbbae2a35989fac4ced29\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\cdf4cc3b708776cdc2805e90540cbeb3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\decb1acca50446f7d04f9c3baaa30a43\transformed\jetified-datastore-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\d4ce3ca3f2edcf65c5795f97027f83c4\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b71b52b2a70c6b10140d87dce8249e38\transformed\jetified-datastore-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\24b2d70c983456e4678be6d7afa07780\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\55a192cd1e8c493370fa6465d68c1145\transformed\jetified-core-1.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\38895ff92e9ea1cab9c97b52c490e983\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -126,6 +130,8 @@ INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\A
 INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\AndroidManifest.xml
 MERGED from [:shared_preferences_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\shared_preferences_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:shared_preferences_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\shared_preferences_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_inappwebview_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\flutter_inappwebview_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_inappwebview_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\flutter_inappwebview_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [androidx.preference:preference:1.2.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0aea3dee6044b352a54f8fb9c4a12c07\transformed\preference-1.2.1\AndroidManifest.xml:20:5-22:41
@@ -138,6 +144,8 @@ MERGED from [:url_launcher_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\b
 MERGED from [:url_launcher_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:connectivity_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\connectivity_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:connectivity_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\connectivity_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [androidx.webkit:webkit:1.12.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\1bf901f7cccf68f385f199a96336a0e3\transformed\webkit-1.12.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.webkit:webkit:1.12.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\1bf901f7cccf68f385f199a96336a0e3\transformed\webkit-1.12.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.browser:browser:1.8.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\5683f3a75f4aae74864d56d25d09ab49\transformed\browser-1.8.0\AndroidManifest.xml:5:5-44
@@ -172,6 +180,22 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alefi\.gr
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\4c4a6ad3f7b10ac103c0346368799501\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\cf593104563b66144c3b6dc7fc4802c1\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\cf593104563b66144c3b6dc7fc4802c1\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e71467fe7caeb25f99b2fabbeba6edee\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e71467fe7caeb25f99b2fabbeba6edee\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0fa1677c034ef049b8c12b4202dcc8c4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0fa1677c034ef049b8c12b4202dcc8c4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\2111a692760d2213c419f21507346c83\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\2111a692760d2213c419f21507346c83\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b6435e177046c519b4e9a09d53555b3f\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b6435e177046c519b4e9a09d53555b3f\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\348e9995eb75a687bf31011ee5dfb249\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\348e9995eb75a687bf31011ee5dfb249\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3e9c3e49153aa47f3a49791ab647f926\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3e9c3e49153aa47f3a49791ab647f926\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7295a6e9f96a0daeed321ae2faac1f7b\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7295a6e9f96a0daeed321ae2faac1f7b\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3ff6adcf87eb4959e12e2c03b49ab87a\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3ff6adcf87eb4959e12e2c03b49ab87a\transformed\jetified-lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7c8820905eb370fbd3bb42d26ba8ae5a\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
@@ -196,30 +220,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\a
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\834fbfef458f2f76792d20bc77011687\transformed\jetified-lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\538273fdc918a79c3b54859282434b2c\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\538273fdc918a79c3b54859282434b2c\transformed\jetified-core-ktx-1.13.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e71467fe7caeb25f99b2fabbeba6edee\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e71467fe7caeb25f99b2fabbeba6edee\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0fa1677c034ef049b8c12b4202dcc8c4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\0fa1677c034ef049b8c12b4202dcc8c4\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\2111a692760d2213c419f21507346c83\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\2111a692760d2213c419f21507346c83\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b6435e177046c519b4e9a09d53555b3f\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b6435e177046c519b4e9a09d53555b3f\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\348e9995eb75a687bf31011ee5dfb249\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\348e9995eb75a687bf31011ee5dfb249\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.4.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3e9c3e49153aa47f3a49791ab647f926\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.4.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3e9c3e49153aa47f3a49791ab647f926\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7295a6e9f96a0daeed321ae2faac1f7b\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7295a6e9f96a0daeed321ae2faac1f7b\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\99ae6e67fc3e457914a47c035e30c12a\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\99ae6e67fc3e457914a47c035e30c12a\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-core-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\decb1acca50446f7d04f9c3baaa30a43\transformed\jetified-datastore-core-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-core-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\decb1acca50446f7d04f9c3baaa30a43\transformed\jetified-datastore-core-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\d4ce3ca3f2edcf65c5795f97027f83c4\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-preferences-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\d4ce3ca3f2edcf65c5795f97027f83c4\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b71b52b2a70c6b10140d87dce8249e38\transformed\jetified-datastore-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.datastore:datastore-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b71b52b2a70c6b10140d87dce8249e38\transformed\jetified-datastore-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\eabc1325411a824ae74b9b450245750e\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\eabc1325411a824ae74b9b450245750e\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\77d6589d54f70503af1ad7bd5c95eb07\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
@@ -232,6 +234,12 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\alefi\.gradle\ca
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\7620a15c947fbbae2a35989fac4ced29\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\cdf4cc3b708776cdc2805e90540cbeb3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\cdf4cc3b708776cdc2805e90540cbeb3\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\decb1acca50446f7d04f9c3baaa30a43\transformed\jetified-datastore-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\decb1acca50446f7d04f9c3baaa30a43\transformed\jetified-datastore-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\d4ce3ca3f2edcf65c5795f97027f83c4\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\d4ce3ca3f2edcf65c5795f97027f83c4\transformed\jetified-datastore-preferences-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b71b52b2a70c6b10140d87dce8249e38\transformed\jetified-datastore-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.3] C:\Users\alefi\.gradle\caches\8.10.2\transforms\b71b52b2a70c6b10140d87dce8249e38\transformed\jetified-datastore-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\24b2d70c983456e4678be6d7afa07780\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\24b2d70c983456e4678be6d7afa07780\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.window.extensions.core:core:1.0.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\55a192cd1e8c493370fa6465d68c1145\transformed\jetified-core-1.0.0\AndroidManifest.xml:5:5-44
@@ -248,6 +256,34 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\alefi\.gradle\cac
 		INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\alefi\StudioProjects\Soybean_Gyan\android\app\src\debug\AndroidManifest.xml
+provider#dev.fluttercommunity.plus.share.ShareFileProvider
+ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:9-21:20
+	android:grantUriPermissions
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:13-47
+	android:authorities
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:13-74
+	android:exported
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-77
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:18:13-20:68
+	android:resource
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:17-65
+	android:name
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:17-67
+receiver#dev.fluttercommunity.plus.share.SharePlusPendingIntent
+ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:9-32:20
+	android:exported
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:13-82
+intent-filter#action:name:EXTRA_CHOSEN_COMPONENT
+ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:29:13-31:29
+action#EXTRA_CHOSEN_COMPONENT
+ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:17-65
+	android:name
+		ADDED from [:share_plus] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:30:25-62
 intent#action:name:android.support.customtabs.action.CustomTabsService
 ADDED from [:flutter_inappwebview_android] C:\Users\alefi\StudioProjects\Soybean_Gyan\build\flutter_inappwebview_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-10:18
 action#android.support.customtabs.action.CustomTabsService
@@ -360,19 +396,13 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\t
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3c939391c922c9154d8d45d84cfbf3d2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\3c939391c922c9154d8d45d84cfbf3d2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-permission#com.example.soybean_gyan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.soybean_gyn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
@@ -382,10 +412,16 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-uses-permission#com.example.soybean_gyan.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.soybean_gyn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\deb838f5c4813d0c441214e1ddf497cc\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\alefi\.gradle\caches\8.10.2\transforms\e920d985392df03e5b02e06877a52d21\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\alefi\.gradle\caches\8.10.2\transforms\eabc1325411a824ae74b9b450245750e\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 	android:value

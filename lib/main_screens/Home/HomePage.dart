@@ -432,11 +432,26 @@ class _ChatbotPageState extends State<ChatbotPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
-        title: const Text('Soychatbot', style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.green,
+        title: TranslatedText(
+          "Soy ChatBot",
+          style: const TextStyle(
+            color: Color(0xFF156B34),
+            fontWeight: FontWeight.w700,
+            fontFamily: "Gilroy Heading",
+            fontSize: 25,
+          ),
+        ),
+        backgroundColor: Color(0xFFE8F5E9),
       ),
-      body: InAppWebView(
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.white, Colors.green.shade50, Colors.green.shade100],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+          ),
+      child: InAppWebView(
         initialUrlRequest: URLRequest(
           url: WebUri(_url),
         ), // Use WebUri instead of Uri
@@ -452,6 +467,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
           debugPrint("Finished Loading: $url");
         },
       ),
+        ),
     );
   }
 }
