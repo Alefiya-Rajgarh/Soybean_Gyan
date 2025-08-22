@@ -164,81 +164,77 @@ class SowingTechniquesScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Expanded(
-              child: ListView.builder(
-                padding: EdgeInsets.all(15),
-                itemCount: sowingteq.length,
-                itemBuilder: (context, index) {
-                  final des = crop.details[index];
-                  final img = sowingteq[index];
-                  return Container(
-                    margin: EdgeInsets.symmetric(vertical: 8),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black12,
-                          blurRadius: 4,
-                          offset: Offset(0, 2),
-                        ),
-                      ],
+        Expanded(
+          child: ListView.builder(
+            padding: EdgeInsets.all(15),
+            itemCount: sowingteq.length, // make sure lengths match
+            itemBuilder: (context, index) {
+              if (index >= crop.details.length) return SizedBox(); // prevent index crash
+
+              final des = crop.details[index];
+              final img = sowingteq[index];
+
+              return Container(
+                margin: EdgeInsets.symmetric(vertical: 8),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 4,
+                      offset: Offset(0, 2),
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.vertical(
-                            top: Radius.circular(15),
-                          ),
-                          child: Image.asset(
-                            img['image']!,
-                            height: 180,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: TranslatedText(
-                            img['name']!,
-                            style: TextStyle(
-                              color: Color(0xFF156B34),
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Gilroy Heading",
-                              fontSize: 25,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Flexible(
-                            child: Padding(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: 12.0,
-                                vertical: 6.0,
-                              ),
-                              child: TranslatedText(
-                                des.description!,
-                                style: TextStyle(
-                                  color: Color(0xFF156B34),
-                                  fontWeight: FontWeight.w700,
-                                  fontFamily: "Gilroy Heading",
-                                  fontSize: 22,
-                                ),
-                                textAlign: TextAlign.center,
-                                softWrap: true,
-                                overflow: TextOverflow.visible,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                  ],
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.vertical(
+                        top: Radius.circular(15),
+                      ),
+                      child: Image.asset(
+                        img['image']!,
+                        height: 180,
+                        fit: BoxFit.cover,
+                      ),
                     ),
-                  );
-                },
-              ),
-            ),
-          ],
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: TranslatedText(
+                        img['name']!,
+                        style: TextStyle(
+                          color: Color(0xFF156B34),
+                          fontWeight: FontWeight.w700,
+                          fontFamily: "Gilroy Heading",
+                          fontSize: 25,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
+                      child: TranslatedText(
+                        des.description ?? "No description available", // ✅ avoid null crash
+                        style: TextStyle(
+                          color: Color(0xFF156B34),
+                          fontWeight: FontWeight.w700,
+                          fontFamily: "Gilroy Heading",
+                          fontSize: 22,
+                        ),
+                        textAlign: TextAlign.center,
+                        softWrap: true,
+                        overflow: TextOverflow.visible,
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
+        )
+
+        ],
         ),
       ),
     );
